@@ -38,19 +38,19 @@ Freeze clears itself when you change engine, since neither engine can play the o
 |---|---|---|---|
 | **K0** | SPEED | Varispeed control of tape playback (interacts with K4 loop). | Centre=full stop; CCW reverse, CW forwards. Detents at 0, ±0.5x, ±1x and ±2x.|
 | **K1** | DRIVE | Record drive into the tape. | CCW=clean, CW=hot.|
-| **K2** | CLOCK | Capture decimation, metrical duration and cassette type. See Decimation and Duration below. | Discrete or continuous, per **SETTINGS K0**.|
+| **K2** | RETENTION | Capture decimation, metrical duration and cassette type. See Decimation and Duration below. | Discrete or continuous, per **SETTINGS K0**.|
 | **K3** | ECHO | Tape echo (print-through) over the K4 loop duration. | CCW=off, CW=full effect.|
 | **K4** | LENGTH | Shortens the tape loop. | The further CCW, the shorter the loop.|
 | **K5** | WARBLE RATE | Rate of the *k*-field warble sitting on the output. | CCW=a slow drift, CW=a fast one.|
 | **K6** | WARBLE DEPTH | Depth of that warble. | CCW=off, CW=full effect.|
 
-Cassette type rides on the clock: each rung is a different machine, coarser rungs being more tired ones, and **LED2** shows which. Wow, flutter and head scrape come with the cassette and with the transport speed rather than from a knob — they are the tape's condition, not a performance control. The warble on **K5** and **K6** is the one that is yours to play.
+Cassette type rides on retention: each stratum is a different machine, coarser strata being more tired ones, and **LED2** shows which. Wow, flutter and head scrape come with the cassette and with the transport speed rather than from a knob — they are the tape's condition, not a performance control. The warble on **K5** and **K6** is the one that is yours to play.
 
 ### Alternate page (SW0=R)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
-| **K4** | SPLICE | The loop's join. | CCW=a 20 ms splice; CW lengthens it toward a quarter-bar dissolve — about half a second at the unclocked tempo, and it follows the clock when one is patched.|
+| **K4** | SPLICE | The loop's join. | CCW=a 20 ms splice; CW lengthens it toward a quarter-bar dissolve — about half a second at the unclocked tempo, and it follows the sync signal when patched.|
 
 Every other knob keeps its main-page job.
 
@@ -66,7 +66,7 @@ A live granular processor. Audio is written continuously into eight ring buffers
 |---|---|---|---|
 | **K0** | PITCH | Grain pitch. See below. | Full CCW=−24 semitones, unison at 0.775, full CW=+12 semitones.|
 | **K1** | WINDOW | Grain envelope shape. | Centre=a plateau of pure Hann. CCW morphs to an exponential decay; CW morphs to its reverse, a swell.|
-| **K2** | CLOCK | Capture decimation and metrical duration. See Decimation and Duration below. | Discrete or continuous, per **SETTINGS K0**.|
+| **K2** | RETENTION | Capture decimation and metrical duration. See Decimation and Duration below. | Discrete or continuous, per **SETTINGS K0**.|
 | **K3** | DENSITY | Grain overlap. See below. | Centre=fullest cloud; either extreme=one grain per four grain-lengths.|
 | **K4** | LENGTH | Grain length. | 50 ms at full CCW to 2 s at full CW, exponentially.|
 | **K5** | MODIFY | Speed and direction of playback, or read position — see **SETTINGS K5**. | Continuous; centre=0x, full CCW=−2x, full CW=+2x, with detents at ±0.5x, ±1x and ±2x.|
@@ -139,9 +139,9 @@ Numbered **0** to **3**, left to right.
 
 ### GRAINS
 
-| LED | SHOWS |
+| LED | DESCRIPTION |
 |---|---|
-| **LED0** | Clock rung. Blends between colours when the clock is continuous.|
+| **LED0** | Retention. Blends between colours when the retention is continuous.|
 | **LED1** | Pitch. Steady bright blue at unison, and **the same blue flashing when the null holds**. Grey-white at the octaves, orange at the fifth up, deep blue at the fifth down. Elsewhere it dims toward unison, warm below it and cool above.|
 | **LED2** | Speed and direction, plus K3's two blinks.|
 | **LED3** | Freeze. Icy blue when engaged.|
@@ -158,11 +158,11 @@ With **SETTINGS K5**=Position, LED2 is a brightness ramp instead: off at the bot
 
 ### TAPE
 
-| LED | SHOWS |
+| LED | DESCRIPTION |
 |---|---|
-| **LED0** | Clock rung, as above.|
+| **LED0** | Retention rung, as above.|
 | **LED1** | Speed. Flashing red at the stop, flashing blue at ±1x, white at ±0.5x and ±2x. Between those the hue names the quarter of the knob you are in — red, magenta, yellow, blue — and brightness rises as you approach the nearest ±1x.|
-| **LED2** | Cassette type, drawn on the clock palette.|
+| **LED2** | Cassette type, drawn on the retention palette.|
 | **LED3** | Freeze. Icy blue when engaged.|
 
 ---
@@ -171,7 +171,7 @@ With **SETTINGS K5**=Position, LED2 is a brightness ramp instead: off at the bot
 
 | CONTROL | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
-| **K2** | CLOCK | Sets capture decimation and metrical duration. | Discrete or continuous, per **SETTINGS K0**. Discrete gives 8 steps from full CW (48 kHz, 1 bar) to full CCW (3 kHz, 12 bars).|
+| **K2** | RETENTION | Sets capture decimation and metrical duration. | Discrete or continuous, per **SETTINGS K0**. Discrete gives 8 steps from full CW (48 kHz, 1 bar) to full CCW (3 kHz, 12 bars).|
 | **FSU CV INPUT** | SYNC | Clock source for capture and grain triggers. | Unsynced defaults to 120 BPM.|
 
 | | RATE | REACH |
@@ -206,7 +206,7 @@ On entry, **LED_0** shows dim red and **LED_1–3** are off until a knob moves.
 
 | KNOB | SETTING | DESCRIPTION | DEFAULT | RANGE |
 |---|---|---|---|---|
-| **K0** | CLOCK MODE | Behaviour of the **K2** clock control. | Continuous | Continuous = a smooth sweep between rungs; Discrete = 8 stepped rungs.|
+| **K0** | RETENTION MODE | **K2** Retention control in both modes. | Continuous | Continuous = a smooth sweep between strata; Discrete = 8 stepped strata.|
 | **K1** | STEREO SPREAD | Both engines: grains scatter across the field, tape opens its wobble out. | 0 (mono) | 0 = mono; increasing to hard L/R at full CW.|
 | **K2** | TAPE SCAN | Where the tape loop sits. | Scan | Scan = roams the memory's whole reach; Loop = sits at the write head.|
 | **K3** | SCAN REFERENCE | What the scan is referenced to. | K0 | K0 = the speed knob; 1x = unity.|
@@ -216,7 +216,7 @@ On entry, **LED_0** shows dim red and **LED_1–3** are off until a knob moves.
 
 All parameters except **K1** are binary switches: the CCW half is the default, the CW half is the alternative.
 
-*NB* on **K6**: with grain sync on and a clock locked, only the outermost part of K3's sparse region snaps to divisions — the part nearest the plateau stays continuous. Rhythmic placement is meaningless once grains overlap, so the ladder is confined to where they don't.
+*NB* on **K6**: with grain sync on (see **SETTINGS**) and a clock sync in **FSU INPUT**, the outermost regions of K3 snap to divisions (nearest to centre remains continuous).
 
 Exit with **FSU-hold (3 sec)**. Settings persist across reboot and reflash. On exit, the **SW0** position decides what is kept:
 
