@@ -128,7 +128,7 @@ With **SETTINGS K5**=Position, LED2 instead displays a brightness ramp: off at f
 
 | LED | DESCRIPTION |
 |---|---|
-| **LED0** | Retention rung, as above.|
+| **LED0** | Retention stratum, as above.|
 | **LED1** | Speed. Flashing red at the stop, flashing blue at ±1x, white at ±0.5x and ±2x.|
 | **LED2** | Cassette type, drawn on the retention palette.|
 | **LED3** | Capture. Blue when engaged.|
