@@ -6,7 +6,7 @@ Firmware for the [Noise Engineering Versio](https://noiseengineering.us/pages/wo
 
 As an agent of recollection and retention, **The Archivist** is a compact performance processor for capturing and manipulating sound in 10hp. It offers two modes of sonic manipulation from distinct eras: **TAPE** emulates early tape splicing procedures, while **GRAINS** affords modern Roads-ian microsound exploration.
 
-Each mode has a specialised capture engine constructed from a tuned misuse of various technologies from its era, resulting in unique aesthetic colouration across memory recall. **TAPE** recreates analogue properties of capture and user parameterisation on reel-to-reel and cassette storage, emulating various cassette recording (EQ, saturation, noise), playback (wow/flutter, head tracking errors), splicing (looping) and effects processing (tape echo, *k*-field modulation); **GRAINS** utilises 1980s/1990s digital techniques for decimation, bit reduction, and efficient storage (DPCM with residual *μ*-law companding and slope overload), additionally providing controls for granular synthesis parameters over a live input.
+Each mode has a specialised capture engine constructed from tuned misuse of various technologies from its era, resulting in unique aesthetic colouration across memory recall. **TAPE** recreates analogue properties of capture and user parameterisation on reel-to-reel and cassette storage, emulating various cassette recording (EQ, saturation, noise), playback (wow/flutter, head tracking errors), splicing (looping) and effects processing (tape echo, *k*-field modulation); **GRAINS** utilises 1980s/1990s digital techniques for decimation, bit reduction, and efficient storage (DPCM with residual *μ*-law companding and slope overload), additionally providing controls for granular synthesis parameters over a live input.
 
 ## Manual
 
@@ -16,17 +16,17 @@ Each mode has a specialised capture engine constructed from a tuned misuse of va
 
 **SW1**: **L** (or **C**) = **TAPE**, **R** = **GRAINS**.
 
-**SW0**: control page. **L** (or **C**) = main page; **R** = alt page, where some knobs take on a second job — four of them in **GRAINS**, one in **TAPE**. Values are held while a knob is on the page it isn't controlling, and are adopted again on passthrough.  Versio knobs are centred slightly right of the noon position.
+**SW0**: **L** (or **C**) = main controls; **R** = alt controls. Parameters are held and recalled on passthrough.
 
 ### FSU Button
 
 | GESTURE | RESULT |
 |---|---|
-| **Tap** | Freeze. The engine stops taking new input and keeps playing what it already has.|
-| **Hold 3 sec, SW0=C** | Reboots into the **SETTINGS PAGE**.|
+| **Tap** | Capture. |
+| **Hold 3 sec, SW0=C** | Reboots into the **SETTINGS**.|
 | **Hold 3 sec, SW0=L or R** | Clears working memory.|
 
-Freeze clears itself when you change engine, since neither engine can play the other's material.
+Captures are cleared upon mode switch or entering **SETTINGS**.
 
 ---
 
@@ -44,19 +44,17 @@ Freeze clears itself when you change engine, since neither engine can play the o
 | **K5** | WARBLE RATE | Rate of the *k*-field warble sitting on the output. | CCW=a slow drift, CW=a fast one.|
 | **K6** | WARBLE DEPTH | Depth of that warble. | CCW=off, CW=full effect.|
 
-Cassette type rides on retention: each stratum is a different machine, coarser strata being more tired ones, and **LED2** shows which. Wow, flutter and head scrape come with the cassette and with the transport speed rather than from a knob — they are the tape's condition, not a performance control. The warble on **K5** and **K6** is the one that is yours to play.
-
 ### Alternate page (SW0=R)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
-| **K4** | SPLICE | The loop's join. | CCW=a 20 ms splice; CW lengthens it toward a quarter-bar dissolve — about half a second at the unclocked tempo, and it follows the sync signal when patched.|
+| **K4** | SPLICE ANGLE | Tape splice angle. | CCW=0°; CW=88°. Follows sync if patched.|
 
 ---
 
 ## MODE 2: GRAINS (SW1=R)
 
-### Main page (SW0=L / C)
+### Main Controls (SW0=L / C)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
@@ -68,7 +66,7 @@ Cassette type rides on retention: each stratum is a different machine, coarser s
 | **K5** | MODIFY | Speed and direction of playback, or read position — see **SETTINGS K5**. | Continuous; centre=0x, full CCW=−2x, full CW=+2x, with detents at ±0.5x, ±1x and ±2x.|
 | **K6** | SPRAY | Gaussian scatter of grain read positions. | CCW=none (grains follow the read head), CW=maximum scatter.|
 
-### Alternate page (SW0=R)
+### Alt Controls (SW0=R)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
@@ -76,56 +74,30 @@ Cassette type rides on retention: each stratum is a different machine, coarser s
 | **K1** | REVERSE | Proportion of grains played backwards. | CCW=all forward, CW=all reverse.|
 | **K2** | GLIDE | How fast speed and spacing changes are followed. | CCW=20 ms, CW=1 s.|
 | **K3** | SWING / HUMANISE | Grain timing. | CCW of centre=swing; CW of centre=random lateness.|
-| **K4** | SPLICE | Softens the join when the read point wraps. See below. | CCW=a hard jump; CW=a wider smear.|
+| **K4** | DISSOLVE | Read point smoothing on write head overtake. | CCW=immediate; CW=full smoothing.|
 
-K5 and K6 keep their main-page jobs on both pages.
-
-### K4: the wrap, and softening it
-
-Played below 1x, **GRAINS** reads the buffer more slowly than the input fills it, so the read point falls further and further behind until it runs out of room and jumps forward. That is unavoidable — half-speed consumes material at half the rate it arrives, and no buffer is deep enough to hold the difference forever. What you can change is how the jump sounds.
-
-At full CCW it is a clean cut, which is how the module has always behaved. Turning **K4** up spreads the join across several grains: new grains begin appearing at the new position while the ones already sounding play out where they were, so the change arrives as a dissolve rather than an edit.
-
-It is measured as a **share of the time between jumps**, not as a length. Slow down and the gap between jumps grows, and the smear grows with it — so the proportion of blurred to settled stays wherever you left the knob, and the feel of playing slowly survives. A fixed length could not do that: it would be invisible near 1x and would swallow everything near a standstill.
-
-Nothing is recovered by any of this. The material still skips; you simply stop being told about it.
-
-At very sparse **K3**, or at speeds close to 1x where jumps are rare, there may not be enough grains passing through the join for a dissolve to mean anything. The knob switches itself off there rather than producing a smear too thin to hear.
-
-### K0: the pitch marks
-
-**LED1** marks five pitches: unison, and a fifth and an octave either side of it. They are marks and nothing more — the knob does not stiffen or snap, the pitch runs straight through each one, and everything in between is reachable.
-
-Unison is the exception. It latches exactly, with a small hysteresis band so it holds once caught, and that matters because it is one of the conditions for the null below.
+*NB: Due to the laws of reality, if you play back audio at* **K5***<1x the output reflects material at an increasingly greater delay from the input. Playing back >1x reuses audio in the buffer. Don't be angry about this, we can't control time yet.*
 
 ### K3 and K6: density and spray
 
-These are separate controls over the same cloud, and they behave differently.
+**K3**: Density sets the number and distribution of overlapping grains.
 
-**K3** sets how many grains overlap. It is thickest at dead centre and thins as you turn either way, and the two halves cover the same ground in opposite directions, so what follows describes both. Working out from centre:
+* Maximum density (20 grains) is generated at the centre position.
+* Turning either way decreases the number of grains, reaching a base of 5 at approximately a quarter-turn from centre. LED2 blinks slowly at this point.
+* Anticlockwise settings generate grains at even amplitude and synchronous spacing.
+* Clockwise settings generate grains at random amplitudes and asynchronous spacing.
+* LED2 blinks at double rate where grains no longer overlap sufficiently to sum smoothly. This point varies with pitch and speed settings.
+* At either extreme setting, one grain is generated per four grain lengths.
 
-* **Centre to 0.38 / 0.62** — the plateau. Density falls from 20 overlapping grains at dead centre to its base of 5 at the edge. That is about a quarter of the knob's travel, and it is the whole of the thickening range. **LED2 blinks slowly** at the edge.
-* **Past the plateau** — sparse, but still continuous. Fewer grains, no gaps, no rhythm, just a thinning texture.
-* **LED2 blinks twice as fast** where grains stop overlapping enough to sum smoothly. Turn further and you begin to hear gaps between them. This point moves with pitch and speed, since a grain covers more or less material depending on both — which is why it is shown on the LED rather than printed here as a number.
-* **Full CCW / full CW** — the sparsest setting. One grain per four grain lengths: separate events with silence between them.
+Density increases automatically when pitching down or increasing speed to maintain coverage. A ceiling of 20 grains is shared between both requirements.
 
-Both blinks are on **LED2** and keep whatever colour K5 has put there. K3's value is held on the alternate page, so they stay put while you are over there. Neither appears when K5 is set to position.
-
-The two halves of K3 are not mirror images. The **CCW** half spawns grains at a strictly regular interval. The **CW** half spawns them stochastically and gives each grain a random amplitude, so the same density reads as looser and more scattered.
-
-**K6** sets how far grains are thrown from where the read head would otherwise place them. It does not change how many there are. At minimum, spray is not quite zero: a small amount always remains, sized to whatever gap has opened between where the module is writing and where it is reading, so that gap cannot comb the sound. At the null there is no gap, so nothing remains and spray genuinely is off.
-
-The two interact in one place, deliberately. **The plateau does nothing while K6 is at minimum** — sweep it from edge to centre with no spray and you will hear no change at all, since density stays at its base of 5 the whole way. Extra grains only help if there is something separating them; twenty grains landing on an evenly spaced ladder comb rather than thicken. So the plateau is held shut until there is enough scatter to carry it, and it opens as K6 comes up. Where it opens is not a fixed knob position — it depends on grain length, pitch and speed, because the same amount of spray means very different things at a 50 ms grain and a 2 s one.
-
-Density also rises on its own where continuity demands it. Pitching down or speeding up means the material runs past faster than the grains read it, so the count is multiplied to keep coverage: an octave down doubles it, two octaves quadruples it. Pitching **up** does not, since each grain then covers more material, not less. The 20-grain ceiling is a CPU limit and it is shared, so if coverage has already spent the headroom, K3's plateau has less to give — at the bottom of K0's range the coverage requirement alone reaches the ceiling and the plateau gives nothing.
+K6: Spray sets deviation of grain read positions from the read head.
+* Density above the base of 5 requires spray.
+* The point at which additional density becomes available varies with grain length, pitch and speed.
 
 ### Reconstruction
 
-**GRAINS** passes the input through unchanged when nothing is asking it not to: **K0** at unison (latched), **K5** at exactly 1x, **K6** at minimum, no detune, no reverse, and the rung not mid-blend. **LED1** flashes blue when all of those hold. The null needs **SETTINGS K5**=Speed: in Position mode there is no read rate for the pitch to match, so it cannot be reached at all.
-
-K3 is not one of the conditions — at the null every grain reads the same sample, so density makes no difference to the result. Neither is stereo spread: the panning is an equal-power coin toss, so the mono sum is unaffected and the null survives at any width.
-
-*NB: Due to the laws of reality, if you play back audio at <1x the output reflects material at an increasingly greater delay from the input. Playing back >1x reuses audio in the buffer. Don't be angry about this, we can't control time yet.*
+For perfect reconstruction, set **SW0=L/K0** = unison, **SW0=R/K0** = centre (no detune), **K5** = 1x, **K6** = full CCW, , **SW0=L/K1** = min (no reverse). **LED1** flashes blue when all of those hold.
 
 ---
 
@@ -137,29 +109,29 @@ Numbered **0** to **3**, left to right.
 
 | LED | DESCRIPTION |
 |---|---|
-| **LED0** | Retention. Blends between colours when the retention is continuous.|
-| **LED1** | Pitch. Steady bright blue at unison, and **the same blue flashing when the null holds**. Grey-white at the octaves, orange at the fifth up, deep blue at the fifth down. Elsewhere it dims toward unison, warm below it and cool above.|
-| **LED2** | Speed and direction, plus K3's two blinks.|
-| **LED3** | Freeze. Icy blue when engaged.|
+| **LED0** | Retention. 8 colours representing strata; blends between colours when the retention is continuous.|
+| **LED1** | Pitch. Bright blue at unison, **flashing when the null holds**. White at octaves, orange at fifth up, dark blue at fifth down. Elsewhere it dims toward unison.|
+| **LED2** | Speed and direction, plus density flashing (see above).|
+| **LED3** | Capture. Blue when engaged.|
 
-**LED2** in detail, with **SETTINGS K5**=Speed:
+**LED2** (with **SETTINGS K5**=Speed):
 
-* **Stopped** — flashing red.
-* **±1x** — green.
-* **±0.5x and ±2x** — white.
-* **Everywhere else** — blue forwards, orange in reverse, brighter the faster it goes.
-* **K3's two marks blink this LED on and off** without changing its colour, so you can read speed and K3 at once. Slowly at the edge of K3's plateau, twice as fast where gaps start.
+* **0x**: Flashing red.
+* **±1x**: Green.
+* **±0.5x and ±2x**: White.
+* **Everywhere else**: Blue forwards, orange reverse, brighter the faster it goes.
+* **K3** coverage landmarks (see above).
 
-With **SETTINGS K5**=Position, LED2 is a brightness ramp instead: off at the bottom of the travel, dim blue just above it, brightening through blue to white at the far end. There are no K3 blinks in position mode.
+With **SETTINGS K5**=Position, LED2 instead displays a brightness ramp: off at full CCW, brightening through blue to white at full CW. There are no K3 blinks in position mode.
 
 ### TAPE
 
 | LED | DESCRIPTION |
 |---|---|
 | **LED0** | Retention rung, as above.|
-| **LED1** | Speed. Flashing red at the stop, flashing blue at ±1x, white at ±0.5x and ±2x. Between those the hue names the quarter of the knob you are in — red, magenta, yellow, blue — and brightness rises as you approach the nearest ±1x.|
+| **LED1** | Speed. Flashing red at the stop, flashing blue at ±1x, white at ±0.5x and ±2x.|
 | **LED2** | Cassette type, drawn on the retention palette.|
-| **LED3** | Freeze. Icy blue when engaged.|
+| **LED3** | Capture. Blue when engaged.|
 
 ---
 
@@ -181,17 +153,17 @@ With **SETTINGS K5**=Position, LED2 is a brightness ramp instead: off at the bot
 | | 4 kHz | 10 bars|
 | **Full CCW** | 3 kHz | 12 bars|
 
-A coarser rung reaches further back in time, so at a fixed speed the same phrase gives you more notes the further CCW you go.
+Coarser strata reach further back in time, so at a given speed the same phrase gives additional context.
 
 ---
 
 ## SETTINGS PAGE
 
-Seven parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW0=C**, or by booting with **FSU** held.
+Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW0=C**, or **FSU** held at boot.
 
 *NB*: Avoid CV input modulation while entering, using or exiting.
 
-On entry, **LED_0** shows dim red and **LED_1–3** are off until a knob moves.
+On entry, **LED_0** displays dim red and **LED_1–3** are off until a knob is moved.
 
 | LED | DESCRIPTION |
 |---|---|
@@ -202,19 +174,17 @@ On entry, **LED_0** shows dim red and **LED_1–3** are off until a knob moves.
 
 | KNOB | SETTING | DESCRIPTION | DEFAULT | RANGE |
 |---|---|---|---|---|
-| **K0** | RETENTION MODE | **K2** Retention control in both modes. | Continuous | Continuous = a smooth sweep between strata; Discrete = 8 stepped strata.|
-| **K1** | STEREO SPREAD | Both engines: grains scatter across the field, tape opens its wobble out. | 0 (mono) | 0 = mono; increasing to hard L/R at full CW.|
-| **K2** | TAPE SCAN | Where the tape loop sits. | Scan | Scan = roams the memory's whole reach; Loop = sits at the write head.|
-| **K3** | SCAN REFERENCE | What the scan is referenced to. | K0 | K0 = the speed knob; 1x = unity.|
-| **K4** | RHYTHM TRANSFER | Whether a rhythm found at one memory survives being carried to another. | Bar | Bar = divides the bar, so **K4** means one length at every memory and a rhythm found at 48 kHz survives a **K2** sweep; Memory = divides the reach, so each memory's bar count flavours the ladder and a **K2** sweep carries the rhythm with it.|
-| **K5** | K5 FUNCTION | What **K5** does in **GRAINS**. | Speed | Speed = playback rate and direction; Position = read position within the buffer.|
-| **K6** | GRAIN SYNC | Grains sync to incoming clock at the FSU CV input. | Off | Off = free-run; On = grain spacing snaps to metrical divisions in K3's sparse region.|
+| **K0** | GLOBAL RETENTION MODE | Global **K2** Retention control in both modes. | Continuous | 0 = Continuous (smooth transition between strata); 0 = Discrete.|
+| **K1** | GLOBAL STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modification expands to stereo. | 0 (mono) | 0. = mono; 1. = hard L/R ( full CW).|
+| **K2** | TAPE SCAN | Tape loop advances or loops persistently. | Scan | 0= Scan (advances through stratum content); 1 = Loop (repeats content).|
+| **K3** | TAPE SCAN REFERENCE | Speed target of advance when **K2**=Scan. | K0 | 0 = K0; 1= 1x (unity).|
+| **K4** | TAPE RHYTHM | Rhythm derived by tape splicing at highest stratum is inherited by others. | Bar | 0 = Bar; 1 = Memory (rhythm is mapped to context at lower strata.|
+| **K5** | GRAINS SPEED/POS | SPEED OR POSITION. | Speed | 0 = Speed (rate and direction); 1 = Position.|
+| **K6** | GRAINS SYNC | Sync grain spawning to incoming clock at the FSU CV input. | Off | 0 = free-running; 1 = spawn at metrical divisions in **K3** sparse region.|
 
-All parameters except **K1** are binary switches: the CCW half is the default, the CW half is the alternative.
+All parameters except **K1** are binary switches: CCW is 0 (default); CW is 1.
 
-*NB* on **K6**: with grain sync on (see **SETTINGS**) and a clock sync in **FSU INPUT**, the outermost regions of K3 snap to divisions (nearest to centre remains continuous).
-
-Exit with **FSU-hold (3 sec)**. Settings persist across reboot and reflash. On exit, the **SW0** position decides what is kept:
+Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and reflash. On exit, **SW0** position determines save.
 
 | SW0 POSITION | SETTING | DESCRIPTION|
 |---|---|---|
@@ -227,7 +197,7 @@ Exit with **FSU-hold (3 sec)**. Settings persist across reboot and reflash. On e
 ## Flash
 
 1. Download `the-archivist.bin` from the repository.
-2. Put your Versio into DFU mode (see the NE Versio firmware wizard for instructions).
+2. Put Versio into DFU mode (see the NE Versio firmware wizard for instructions).
 3. Load the `.bin` using either the NE Versio firmware wizard on the [NE Versio page](https://noiseengineering.us/pages/world-of-versio/) or the [Electrosmith Daisy Bootloader page](https://flash.daisy.audio/).
 
 ## Disclaimer
