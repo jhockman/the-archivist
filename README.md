@@ -30,9 +30,9 @@ Captures are cleared upon mode switch or entering **SETTINGS**.
 
 ---
 
-## MODE 1: TAPE (SW1=L or C)
+## MODE 1: TAPE (SW1=L/C)
 
-### Main page (SW0=L / C)
+### Main page (SW0=L/C)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
@@ -54,7 +54,7 @@ Captures are cleared upon mode switch or entering **SETTINGS**.
 
 ## MODE 2: GRAINS (SW1=R)
 
-### Main Controls (SW0=L / C)
+### Main Controls (SW0=L/C)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
@@ -91,7 +91,7 @@ Captures are cleared upon mode switch or entering **SETTINGS**.
 
 Density increases automatically when pitching down or increasing speed to maintain coverage. A ceiling of 20 grains is shared between both requirements.
 
-K6: Spray sets deviation of grain read positions from the read head.
+**K6**: Spray sets deviation of grain read positions from the read head.
 * Density above the base of 5 requires spray.
 * The point at which additional density becomes available varies with grain length, pitch and speed.
 
