@@ -135,7 +135,7 @@ With **SETTINGS K5**=Position, LED2 instead displays a brightness ramp: off at f
 
 ---
 
-## Decimation and Duration Mapping
+## Retention and Strata
 
 | CONTROL | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
