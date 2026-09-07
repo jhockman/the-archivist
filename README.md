@@ -2,9 +2,11 @@
 
 Firmware for the [Noise Engineering Versio](https://noiseengineering.us/pages/world-of-versio/) from [Detuned Transmissions (DTND)](https://detunedtransmissions.com/).
 
-A compact performance processor for capturing and manipulating sound in 10hp, **The Archivist** offers 2 modes of sonic manipulation from distinct eras: **TAPE** emulates early tape splicing procedures while **GRAINS** affords modern Roads-ian granular microsound exploration.
+Recollection is a re-presentation, the elapsed object reproduced and posited as having been, at will and repeatably. Retention exists as an axis of strata with the just-elapsed object held in the active present within the context of previously perceived experiences. Each successive stratum retains those before it, the elapsed receding through a continuum towards an indistinct horizon. 
 
-Each mode has a specialised capture engine constructed from a tuned misuse of various technologies from its era, resulting in unique aesthetic colouration across memory recall. **TAPE** recreates analogue properties of capture and user parameterisation on reel-to-reel and cassette storage,  emulating various cassette recording (EQ, saturation, noise), playback (wow/flutter, head tracking errors), splicing (looping) and effects processing (tape echo, *k*-field modulation); **GRAINS** utilises 1980s digital techniques for decimation, bit reduction, and efficient storage (DPCM with residual *μ*-law companding and slope overload), additionally provideing controls for granular synthesis parameters over a live input.
+As an agent of recollection and retention, **The Archivist**, is a compact performance processor for capturing and manipulating sound in 10hp, offering 2 modes of sonic manipulation from distinct eras: **TAPE** emulates early tape splicing procedures while **GRAINS** affords modern Roads-ian granular microsound exploration.
+
+Each mode has a specialised capture engine constructed from a tuned misuse of various technologies from its era, resulting in unique aesthetic colouration across memory recall. **TAPE** recreates analogue properties of capture and user parameterisation on reel-to-reel and cassette storage, emulating various cassette recording (EQ, saturation, noise), playback (wow/flutter, head tracking errors), splicing (looping) and effects processing (tape echo, *k*-field modulation); **GRAINS** utilises 1980s digital techniques for decimation, bit reduction, and efficient storage (DPCM with residual *μ*-law companding and slope overload), additionally provideing controls for granular synthesis parameters over a live input.
 
 Both modes process the incoming signal in realtime, with direct CV control over knob parameters.
 
@@ -24,7 +26,7 @@ Both modes process the incoming signal in realtime, with direct CV control over 
 |---|---|
 | **Tap** | Freeze. The engine stops taking new input and keeps playing what it already has.|
 | **Hold 3 sec, SW0=C** | Reboots into the **SETTINGS PAGE**.|
-| **Hold 3 sec, SW0=L or R** | Wipes the buffers.|
+| **Hold 3 sec, SW0=L or R** | Clears working memory.|
 
 Freeze clears itself when you change engine, since neither engine can play the other's material.
 
@@ -52,13 +54,9 @@ Cassette type rides on retention: each stratum is a different machine, coarser s
 |---|---|---|---|
 | **K4** | SPLICE | The loop's join. | CCW=a 20 ms splice; CW lengthens it toward a quarter-bar dissolve — about half a second at the unclocked tempo, and it follows the sync signal when patched.|
 
-Every other knob keeps its main-page job.
-
 ---
 
 ## MODE 2: GRAINS (SW1=R)
-
-A live granular processor. Audio is written continuously into eight ring buffers at different sample rates; playback is short windowed grains read back out of them.
 
 ### Main page (SW0=L / C)
 
