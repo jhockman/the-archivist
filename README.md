@@ -12,11 +12,11 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 
 *Video manual to follow; hardware panel imminent...*
 
-### Mode Selection
+### SWITCHES
 
-**SW1**: **L** (or **C**) = **TAPE**, **R** = **GRAINS**.
+* Mode: **SW1**: **L/C** = **TAPE**, **R** = **GRAINS**.
 
-**SW0**: **L** (or **C**) = main controls; **R** = alt controls. Parameters are held and recalled on passthrough.
+* Controls: **SW0**: **L/C** = main controls; **R** = alt controls. Parameters are held and recalled on passthrough.
 
 ### FSU Button
 
