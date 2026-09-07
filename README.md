@@ -41,8 +41,8 @@ Captures are cleared upon mode switch or entering **SETTINGS**.
 | **K2** | RETENTION | Decimation, metrical duration and cassette type. See Retention and Strata below. | Discrete or continuous, per **SETTINGS K0**.|
 | **K3** | ECHO | Tape echo (print-through) over the K4 loop duration. | CCW=off, CW=full effect.|
 | **K4** | LENGTH | Shortens the tape loop. | The further CCW, the shorter the loop.|
-| **K5** | WARBLE RATE | Rate of the *k*-field warble sitting on the output. | CCW=a slow drift, CW=a fast one.|
-| **K6** | WARBLE DEPTH | Depth of that warble. | CCW=off, CW=full effect.|
+| **K5** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
+| **K6** | K-FIELD DEPTH | Modulation depth. | CCW=off, CW=full effect.|
 
 ### Alt Controls (SW0=R)
 
