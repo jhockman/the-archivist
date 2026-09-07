@@ -2,13 +2,11 @@
 
 Firmware for the [Noise Engineering Versio](https://noiseengineering.us/pages/world-of-versio/) from [Detuned Transmissions (DTND)](https://detunedtransmissions.com/).
 
-Recollection is a re-presentation, the elapsed object reproduced and posited as having been, at will and repeatably. Retention exists as an axis of strata with the just-elapsed object held in the active present within the context of previously perceived experiences. Each successive stratum retains those before it, the elapsed receding through a continuum towards an indistinct horizon. 
+*Recollection* is a re-presentation, the elapsed object reproduced and posited as having been, at will and repeatably. *Retention* exists as an axis of strata with the just-elapsed object held in the active present within the context of previously perceived experience. Each successive stratum retains those before it, the elapsed receding through a continuum towards an indistinct horizon. 
 
 As an agent of recollection and retention, **The Archivist**, is a compact performance processor for capturing and manipulating sound in 10hp, offering 2 modes of sonic manipulation from distinct eras: **TAPE** emulates early tape splicing procedures while **GRAINS** affords modern Roads-ian granular microsound exploration.
 
 Each mode has a specialised capture engine constructed from a tuned misuse of various technologies from its era, resulting in unique aesthetic colouration across memory recall. **TAPE** recreates analogue properties of capture and user parameterisation on reel-to-reel and cassette storage, emulating various cassette recording (EQ, saturation, noise), playback (wow/flutter, head tracking errors), splicing (looping) and effects processing (tape echo, *k*-field modulation); **GRAINS** utilises 1980s digital techniques for decimation, bit reduction, and efficient storage (DPCM with residual *μ*-law companding and slope overload), additionally provideing controls for granular synthesis parameters over a live input.
-
-Both modes process the incoming signal in realtime, with direct CV control over knob parameters.
 
 ## Manual
 
