@@ -12,18 +12,20 @@ As an agent of retention and recollection, **The Archivist** is a compact perfor
 
 Each mode has a specialised sampling engine constructed from tuned misuse of various technologies from its era, resulting in unique aesthetic colouration across memory recall. **TAPE** recreates analogue properties of reel-to-reel and cassette media, with the afforded manipulations—emulating various recording (EQ, saturation, noise), playback (wow/flutter, head tracking errors), splicing (looping) and effects processing (tape echo, pitch modulation); **GRAINS** is inspired by 1980s/1990s digital codecs for decimation, bit reduction, and efficient storage (DPCM with residual *μ*-law companding and slope overload), with parameterisation over the grain engine and storage qualities. Both modes encourage a departure from the present by navigating retention strata to excavate old memories, which find expression through degradation that antiquated mediums impart. 
 
-## Manual
+# MANUAL
 
 *Video manual to follow; hardware panel imminent...*
 
-## INSTALLATION
+## INSTALL
 
 1. Download `the-archivist.bin` from the repository.
 2. Put Versio into DFU mode (see the NE Versio firmware wizard for instructions).
 3. Load the `.bin` using either the NE Versio firmware wizard on the [NE Versio page](https://noiseengineering.us/pages/world-of-versio/) or the [Electrosmith Daisy Bootloader page](https://flash.daisy.audio/).
 
+## OPERATION
 
 ### SWITCHES
+SW0 = Switch 0 (top); SW1 = Switch 1 (bottom)
 
 | SWITCH | SETTING | MODE/CTRL | DESCRIPTION |
 |---|---|---|---|
@@ -44,11 +46,14 @@ Parameters are held and recalled on passthrough between toggling control pages.
 
 **FSU Button** operates the same in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
 
----
+### KNOB
+Knob parameterisation differs per mode and pages. Please see knob layout descriptions in the relevant sections below. 
 
-## MODE 1: TAPE (SW1=L/C)
+## MODES
 
-### Main Controls (SW0=L/C)
+### MODE 1: TAPE (SW1=L/C)
+
+#### Main Controls (SW0=L/C)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
@@ -60,14 +65,14 @@ Parameters are held and recalled on passthrough between toggling control pages.
 | **K5** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
 | **K6** | K-FIELD DEPTH | Modulation depth. | CCW=off, CW=full effect.|
 
-### Alt Controls (SW0=R)
+#### Alt Controls (SW0=R)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
 | **K4** | SPLICE ANGLE | Tape splice angle. | CCW=20ms; CW=500ms.|
 
 
-## TAPE LEDs
+#### TAPE LEDs
 
 Numbered **0** to **3**, left to right.
 
@@ -80,9 +85,9 @@ Numbered **0** to **3**, left to right.
 
 ---
 
-## MODE 2: GRAINS (SW1=R)
+### MODE 2: GRAINS (SW1=R)
 
-### Main Controls (SW0=L/C)
+#### Main Controls (SW0=L/C)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
@@ -94,7 +99,7 @@ Numbered **0** to **3**, left to right.
 | **K5** | MODIFY | Speed and direction of playback, or read position — see **SETTINGS K5**. | Continuous; centre=0x, full CCW=−2x, full CW=+2x, with detents at ±0.5x, ±1x and ±2x.|
 | **K6** | SPRAY | Gaussian scatter of grain read positions. | CCW=none (grains follow read head), CW=random position.|
 
-### Alt Controls (SW0=R)
+#### Alt Controls (SW0=R)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
@@ -106,7 +111,7 @@ Numbered **0** to **3**, left to right.
 
 *NB: Due to the laws of reality, if you play back audio at* **K5**<1x the output reflects material at an increasingly greater delay from the input. Playing back >1x reuses audio in the buffer. Don't be angry about this, we can't control time yet.*
 
-### K3 and K6: Density and Spray
+### K3 and K6: DENSITY AND SPRAY
 
 **K3**: Density sets the number and distribution of overlapping grains.
 
@@ -123,11 +128,11 @@ Density increases automatically when pitching down or increasing speed to mainta
 * Density above the base of 5 requires spray (**K6>0**).
 * The point at which additional density becomes available varies with grain length, pitch and speed.
 
-### Reconstruction
+#### Reconstruction
 
 For perfect reconstruction, set **SW0=L/K0** = unison, **SW0=R/K0** = centre, **K5** = 1x, **K6** = full CCW, **SW0=R/K1** = min (no reverse). **LED1** flashes blue when all of those hold.
 
-## GRAINS LEDs
+#### GRAINS LEDs
 
 Numbered **0** to **3**, left to right.
 
@@ -178,7 +183,7 @@ Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW0
 
 *NB*: Avoid CV input modulation while entering, using or exiting.
 
-## SETTINGS LEDs
+### SETTINGS LEDs
 
 Numbered **0** to **3**, left to right.
 
@@ -213,7 +218,7 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 ---
 
-## Disclaimer
+# DISCLAIMER
 
 **Known (*but possibly enjoyable*) behaviour:**
 
