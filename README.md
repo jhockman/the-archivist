@@ -14,12 +14,12 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 
 ### SWITCHES
 
-| SW1 POSITION | MODE | DESCRIPTION |
+| SW1 | MODE | DESCRIPTION |
 |---|---|---|
 | **SW1=L** | TAPE | Tape engine.|
 | **SW1=R** | GRAINS | Granular engine.|
 
-| SW0 POSITION | CTRL GROUP | DESCRIPTION |
+| SW0 | CTRL GROUP | DESCRIPTION |
 |---|---|---|
 | **SW0=L/C** | Main controls. | Main controls for either mode.|
 | **SW0=R** | Alt controls. | Alternative controls for eitehr mode.|
