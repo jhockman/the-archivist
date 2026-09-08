@@ -31,7 +31,7 @@ Parameters are held and recalled on passthrough between toggling control pages.
 | **Hold 3 sec, SW0=C** | Reboots into the **SETTINGS**.|
 | **Hold 3 sec, SW0=L or R** | Clears working memory.|
 
-Captures are cleared upon mode switch or entering **SETTINGS**.
+**FSU Button** operates the same in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
 
 ---
 
