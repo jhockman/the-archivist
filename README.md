@@ -23,7 +23,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 |---|---|---|
 | **SW0=L/C** | Main controls. | Main controls for either mode.|
 | **SW0=R** | Alt controls. | Alternative controls for either mode.|
-* Parameters are held and recalled on passthrough between toggling control pages.
+Parameters are held and recalled on passthrough between toggling control pages.
 
 ### FSU BUTTON
 
