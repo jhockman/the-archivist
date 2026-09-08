@@ -1,7 +1,8 @@
 # The Archivist
 
-<img width="1588" height="1447" alt="Nineveh" src="https://github.com/user-attachments/assets/9be852bd-a7af-4edb-b8d2-a0f4d680d7b6" />
-
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/9be852bd-a7af-4edb-b8d2-a0f4d680d7b6" width="700">
+</p>
 
 Firmware for the [Noise Engineering Versio](https://noiseengineering.us/pages/world-of-versio/) from [Detuned Transmissions (DTND)](https://detunedtransmissions.com/).
 
