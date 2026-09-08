@@ -14,13 +14,23 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 
 ### SWITCHES
 
-* Mode: **SW1**: **L/C** = **TAPE**, **R** = **GRAINS**.
+* Mode Switch
 
-* Controls: **SW0**: **L/C** = main controls; **R** = alt controls. Parameters are held and recalled on passthrough.
+| SW1 POSITION | MODE | DESCRIPTION |
+|---|---|---|
+| **SW1=L** | TAPE | Tape engine.|
+| **SW1=R** | GRAINS | Granular engine.|
+
+* Control Switch (Parameters are held and recalled on passthrough)
+
+| SW0 POSITION | CTRL GROUP | DESCRIPTION |
+|---|---|---|
+| **SW0=L/C** | Main controls. | Main controls for either mode.|
+| **SW0=R** | Alt controls. | Alternative controls for eitehr mode.|
 
 ### FSU BUTTON
 
-| GESTURE | RESULT |
+| GESTURE | DESCRIPTION |
 |---|---|
 | **Tap** | Capture. |
 | **Hold 3 sec, SW0=C** | Reboots into the **SETTINGS**.|
