@@ -14,12 +14,12 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 
 ### SWITCHES
 
-| SWITCH | SETTING | MODE/PAGE | DESCRIPTION |
+| SWITCH | SETTING | MODE/CTRL | DESCRIPTION |
 |---|---|---|---|
 | **SW1** | L/C | TAPE | Tape engine.|
 | **SW1** | R | GRAINS | Granular engine.|
-| **SW0** | L/C | Main controls. | Main controls for either mode.|
-| **SW0** | R | Alt controls. | Alternative controls for either mode.|
+| **SW0** | L/C | Main controls | Main controls for either mode.|
+| **SW0** | R | Alt controls | Alternative controls for either mode.|
 
 Parameters are held and recalled on passthrough between toggling control pages.
 
