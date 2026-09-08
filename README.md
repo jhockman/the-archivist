@@ -18,7 +18,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 
 * Controls: **SW0**: **L/C** = main controls; **R** = alt controls. Parameters are held and recalled on passthrough.
 
-### FSU Button
+### FSU BUTTON
 
 | GESTURE | RESULT |
 |---|---|
