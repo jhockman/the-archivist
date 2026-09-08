@@ -85,9 +85,9 @@ Parameters are held and recalled on passthrough between toggling control pages.
 | **K3** | SWING / HUMANISE | Grain timing. | CCW of centre=swing; CW of centre=random lateness.|
 | **K4** | DISSOLVE | Read point smoothing on write head overtake. | CCW=immediate; CW=full smoothing.|
 
-*NB: Due to the laws of reality, if you play back audio at* **K5***<1x the output reflects material at an increasingly greater delay from the input. Playing back >1x reuses audio in the buffer. Don't be angry about this, we can't control time yet.*
+*NB: Due to the laws of reality, if you play back audio at* **K5**<1x the output reflects material at an increasingly greater delay from the input. Playing back >1x reuses audio in the buffer. Don't be angry about this, we can't control time yet.*
 
-### K3 and K6: density and spray
+### K3 and K6: Density and Spray
 
 **K3**: Density sets the number and distribution of overlapping grains.
 
