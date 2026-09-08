@@ -4,7 +4,7 @@
   <img src="https://github.com/user-attachments/assets/9be852bd-a7af-4edb-b8d2-a0f4d680d7b6" width="700">
 </p>
 
-Firmware for the [Noise Engineering Versio](https://noiseengineering.us/pages/world-of-versio/) from [Detuned Transmissions (DTND)](https://detunedtransmissions.com/).
+A [Detuned Transmissions (DTND)](https://detunedtransmissions.com/) firmware for the [Noise Engineering Versio](https://noiseengineering.us/pages/world-of-versio/).
 
 > *Recollection* is a re-presentation, the elapsed object reproduced and posited as having been, at will and repeatably. *Retention* exists as an axis of strata with the just-elapsed object held in the active present within the context of previously perceived experience. Each successive stratum retains those before it, the elapsed receding through a continuum towards an indistinct horizon. 
 
