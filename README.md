@@ -144,14 +144,14 @@ With **SETTINGS K5**=Position, LED2 instead displays a brightness ramp: off at f
 
 ---
 
-## Retention and Strata
+## RETENTION AND STRATA
 
 | CONTROL | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
 | **K2** | RETENTION | Sets capture decimation and metrical duration. | Discrete or continuous, per **SETTINGS K0**. Discrete gives 8 steps from full CW (48 kHz, 1 bar) to full CCW (3 kHz, 12 bars).|
 | **FSU CV INPUT** | SYNC | Clock source for capture and grain triggers. | Unsynced defaults to 120 BPM.|
 
-| | RATE | REACH |
+| | RATE | CONTEXT |
 |---|---|---|
 | **Full CW** | 48 kHz | 1 bar|
 | | 24 kHz | 2 bars|
