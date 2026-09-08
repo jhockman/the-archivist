@@ -16,6 +16,13 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 
 *Video manual to follow; hardware panel imminent...*
 
+## INSTALLATION
+
+1. Download `the-archivist.bin` from the repository.
+2. Put Versio into DFU mode (see the NE Versio firmware wizard for instructions).
+3. Load the `.bin` using either the NE Versio firmware wizard on the [NE Versio page](https://noiseengineering.us/pages/world-of-versio/) or the [Electrosmith Daisy Bootloader page](https://flash.daisy.audio/).
+
+
 ### SWITCHES
 
 | SWITCH | SETTING | MODE/CTRL | DESCRIPTION |
@@ -205,12 +212,6 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 | **SW0=R** | DEFAULT | Reset to defaults; discard changes and use module defaults on restart.|
 
 ---
-
-## Flash
-
-1. Download `the-archivist.bin` from the repository.
-2. Put Versio into DFU mode (see the NE Versio firmware wizard for instructions).
-3. Load the `.bin` using either the NE Versio firmware wizard on the [NE Versio page](https://noiseengineering.us/pages/world-of-versio/) or the [Electrosmith Daisy Bootloader page](https://flash.daisy.audio/).
 
 ## Disclaimer
 
