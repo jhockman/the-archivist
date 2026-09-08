@@ -59,6 +59,18 @@ Parameters are held and recalled on passthrough between toggling control pages.
 |---|---|---|---|
 | **K4** | SPLICE ANGLE | Tape splice angle. | CCW=20ms; CW=500ms.|
 
+
+## TAPE LEDs
+
+Numbered **0** to **3**, left to right.
+
+| LED | DESCRIPTION |
+|---|---|
+| **LED0** | Retention stratum, as above.|
+| **LED1** | Speed. Flashing red at the stop, flashing blue at ±1x, white at ±0.5x and ±2x.|
+| **LED2** | Cassette type, drawn on the retention palette.|
+| **LED3** | Capture. Blue when engaged.|
+
 ---
 
 ## MODE 2: GRAINS (SW1=R)
@@ -67,13 +79,13 @@ Parameters are held and recalled on passthrough between toggling control pages.
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
-| **K0** | PITCH | Grain pitch. See below. | Full CCW=−24 semitones, unison at 0.775, full CW=+12 semitones.|
+| **K0** | PITCH | Grain pitch (see below). | Full CCW=−24 semitones, unison at 0.775, full CW=+12 semitones.|
 | **K1** | WINDOW | Grain envelope shape. | Centre=a plateau of pure Hann. CCW morphs to an exponential decay; CW morphs to its reverse, a swell.|
-| **K2** | RETENTION | Capture decimation and metrical duration. See Retention and Strata below. | Discrete or continuous, per **SETTINGS K0**.|
-| **K3** | DENSITY | Grain overlap. See below. | Centre=fullest cloud; either extreme=one grain per four grain-lengths.|
+| **K2** | RETENTION | Capture decimation and metrical duration (see Retention and Strata below). | Discrete or continuous, per **SETTINGS K0**.|
+| **K3** | DENSITY | Grain overlap (see below). | Centre=fullest cloud; either extreme=one grain per four grain-lengths.|
 | **K4** | LENGTH | Grain length. | 50 ms at full CCW to 2 s at full CW, exponentially.|
 | **K5** | MODIFY | Speed and direction of playback, or read position — see **SETTINGS K5**. | Continuous; centre=0x, full CCW=−2x, full CW=+2x, with detents at ±0.5x, ±1x and ±2x.|
-| **K6** | SPRAY | Gaussian scatter of grain read positions. | CCW=none (grains follow the read head), CW=maximum scatter.|
+| **K6** | SPRAY | Gaussian scatter of grain read positions. | CCW=none (grains follow read head), CW=random position.|
 
 ### Alt Controls (SW0=R)
 
@@ -101,20 +113,16 @@ Parameters are held and recalled on passthrough between toggling control pages.
 Density increases automatically when pitching down or increasing speed to maintain coverage. A ceiling of 20 grains is shared between both requirements.
 
 **K6**: Spray sets deviation of grain read positions from the read head.
-* Density above the base of 5 requires spray.
+* Density above the base of 5 requires spray (**K6>0**).
 * The point at which additional density becomes available varies with grain length, pitch and speed.
 
 ### Reconstruction
 
 For perfect reconstruction, set **SW0=L/K0** = unison, **SW0=R/K0** = centre, **K5** = 1x, **K6** = full CCW, **SW0=R/K1** = min (no reverse). **LED1** flashes blue when all of those hold.
 
----
-
-## LEDs
+## GRAINS LEDs
 
 Numbered **0** to **3**, left to right.
-
-### GRAINS
 
 | LED | DESCRIPTION |
 |---|---|
@@ -133,22 +141,13 @@ Numbered **0** to **3**, left to right.
 
 With **SETTINGS K5**=Position, LED2 instead displays a brightness ramp: off at full CCW, brightening through blue to white at full CW. There are no K3 blinks in position mode.
 
-### TAPE
-
-| LED | DESCRIPTION |
-|---|---|
-| **LED0** | Retention stratum, as above.|
-| **LED1** | Speed. Flashing red at the stop, flashing blue at ±1x, white at ±0.5x and ±2x.|
-| **LED2** | Cassette type, drawn on the retention palette.|
-| **LED3** | Capture. Blue when engaged.|
-
 ---
 
 ## RETENTION AND STRATA
 
 | CONTROL | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
-| **K2** | RETENTION | Sets capture decimation and metrical duration. | Discrete or continuous, per **SETTINGS K0**. Discrete gives 8 steps from full CW (48 kHz, 1 bar) to full CCW (3 kHz, 12 bars).|
+| **K2** | RETENTION | Selects stratum  with increasing decimation and context. | Continuous or discrete, per **SETTINGS K0**. Discrete = 8 strata from full CW (48 kHz, 1 bar) to full CCW (3 kHz, 12 bars).|
 | **FSU CV INPUT** | SYNC | Clock source for capture and grain triggers. | Unsynced defaults to 120 BPM.|
 
 | | RATE | CONTEXT |
@@ -171,6 +170,10 @@ Coarser strata reach further back in time, so at a given speed the same phrase g
 Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW0=C**, or **FSU** held at boot.
 
 *NB*: Avoid CV input modulation while entering, using or exiting.
+
+## SETTINGS LEDs
+
+Numbered **0** to **3**, left to right.
 
 On entry, **LED_0** displays dim red and **LED_1–3** are off until a knob is moved.
 
