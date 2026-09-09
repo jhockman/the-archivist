@@ -124,18 +124,6 @@ Numbered **0** to **3**, left to right.
 * Sets deviation of grain read positions from the read head.
 * The point at which additional density becomes available varies with grain length, pitch and speed.
 
-#### RECONSTRUCTION
-
-For perfect reconstruction, set **SW0=L/K0** = unison, **SW0=R/K0** = centre, **K5** = 1x, **K6** = full CCW, **SW0=R/K1** = min (no reverse). **LED1** flashes blue when all of those hold.
-
-#### PITCH SHIFTING
-
-Follow above instructions for reconstruction, and modify **K0** to desired pitch. Slight adjustments to other parameters may yield improved results.
-
-#### TIME SCALING
-
-Similarly, follow above instructions for reconstruction, and modify **K5** to desired speed. Adjustments to other parameters (notably **K4** and **K6**) will result in improved coverage at **K5** nearer to 0x.
-
 #### GRAINS LEDs
 
 Numbered **0** to **3**, left to right.
@@ -180,6 +168,22 @@ With **SETTINGS K5**=Position, LED2 instead displays a brightness ramp: off at f
 Coarser strata reach further back in time, so at a given speed the same phrase gives additional context.
 
 ---
+
+## EXAMPLE SETTINGS
+
+### GRAINS
+
+#### RECONSTRUCTION
+
+For perfect reconstruction, set **SW0=L/K0** = unison, **SW0=R/K0** = centre, **K5** = 1x, **K6** = full CCW, **SW0=R/K1** = min (no reverse). **LED1** flashes blue when all of those hold.
+
+#### PITCH SHIFTING
+
+Follow above instructions for reconstruction, and modify **K0** to desired pitch. Slight adjustments to other parameters may yield improved results.
+
+#### TIME SCALING
+
+Similarly, follow above instructions for reconstruction, and modify **K5** to desired speed. Adjustments to other parameters (notably **K4** and **K6**) will result in improved coverage at **K5** nearer to 0x.
 
 ## SETTINGS PAGE
 
