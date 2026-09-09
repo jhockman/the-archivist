@@ -216,7 +216,7 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 #### RECONSTRUCTION
 
-For perfect reconstruction, set **SW0=L/K0** = unison, **SW0=R/K0** = centre, **K5** = 1x, **K6** = full CCW, **SW0=R/K1** = min (no reverse). **LED1** flashes blue when all of those hold.
+Set **SW0=L/K0** = unison (**LED1**=deep blue (~0.75)), **SW0=R/K0** = centre, **K5** = 1x (~0.75), **K6** = full CCW, **SW0=R/K1** = 0. (no reverse). **LED1** flashes blue when all of those hold.
 
 #### PITCH SHIFTING
 
