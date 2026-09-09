@@ -169,22 +169,6 @@ Coarser strata reach further back in time, so at a given speed the same phrase g
 
 ---
 
-## EXAMPLE SETTINGS
-
-### GRAINS
-
-#### RECONSTRUCTION
-
-For perfect reconstruction, set **SW0=L/K0** = unison, **SW0=R/K0** = centre, **K5** = 1x, **K6** = full CCW, **SW0=R/K1** = min (no reverse). **LED1** flashes blue when all of those hold.
-
-#### PITCH SHIFTING
-
-Follow above instructions for reconstruction, and modify **K0** to desired pitch. Slight adjustments to other parameters may yield improved results.
-
-#### TIME SCALING
-
-Similarly, follow above instructions for reconstruction, and modify **K5** to desired speed. Adjustments to other parameters (notably **K4** and **K6**) will result in improved coverage at **K5** nearer to 0x.
-
 ## SETTINGS PAGE
 
 Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW0=C**, or **FSU** held at boot.
@@ -226,6 +210,23 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 ---
 
+## EXAMPLES
+
+### GRAINS
+
+#### RECONSTRUCTION
+
+For perfect reconstruction, set **SW0=L/K0** = unison, **SW0=R/K0** = centre, **K5** = 1x, **K6** = full CCW, **SW0=R/K1** = min (no reverse). **LED1** flashes blue when all of those hold.
+
+#### PITCH SHIFTING
+
+Follow above instructions for reconstruction, and modify **K0** to desired pitch. Slight adjustments to other parameters may yield improved results.
+
+#### TIME SCALING
+
+Similarly, follow above instructions for reconstruction, and modify **K5** to desired speed. Adjustments to other parameters (notably **K4** and **K6**) will result in improved coverage at **K5** nearer to 0x.
+
+---
 # DISCLAIMER
 
 **Known (*but possibly enjoyable*) behaviour:**
