@@ -42,7 +42,7 @@ Parameters are held and recalled on passthrough between toggling control pages.
 |---|---|
 | **Tap** | Capture. |
 | **Hold 3 sec, SW0=C** | Enter/exit **SETTINGS** page.|
-| **Hold 3 sec, SW0=L or R** | Clears working memory.|
+| **Hold 3 sec, SW0=L or R** | Clears retention in **TAPE** or **GRAINS**.|
 
 **FSU Button** operates the same in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
 
@@ -94,7 +94,7 @@ Numbered **0** to **3**, left to right.
 | **K0** | PITCH | Grain pitch (see below). | Full CCW=−24 semitones, unison at 0.775, full CW=+12 semitones.|
 | **K1** | WINDOW | Grain envelope shape. | Centre=a plateau of pure Hann. CCW morphs to an exponential decay; CW morphs to its reverse, a swell.|
 | **K2** | RETENTION | Capture decimation and metrical duration (see Retention and Strata below). | Discrete or continuous, per **SETTINGS K0**.|
-| **K3** | DENSITY | Grain overlap (see below). | Centre=fullest cloud; either extreme=one grain per four grain-lengths.|
+| **K3** | DENSITY | Grain overlap (see below). | Centre=maximum overlap; full CCW=minimum isochronous; full CW=minimum random.|
 | **K4** | LENGTH | Grain length. | 50 ms at full CCW to 2 s at full CW, exponentially.|
 | **K5** | MODIFY | Speed and direction of playback, or read position — see **SETTINGS K5**. | Continuous; centre=0x, full CCW=−2x, full CW=+2x, with detents at ±0.5x, ±1x and ±2x.|
 | **K6** | SPRAY | Gaussian scatter of grain read positions. | CCW=none (grains follow read head), CW=random position.|
@@ -113,19 +113,17 @@ Numbered **0** to **3**, left to right.
 
 ### K3 and K6: DENSITY AND SPRAY
 
-**K3**: Density sets the number and distribution of overlapping grains.
-
-* Maximum density (20 grains) is generated at the centre position.
+**K3**: DENSITY 
+* Sets the number and distribution of overlapping grains.
+* Maximum density is generated at the centre position. At **K0**=unison, **K5**=1x, and **K6**=0, maximum density is 5, and is increased automatically for cloud coverage, presence of pitch intervals, and **K6**>0.
 * Turning either way decreases the number of grains, reaching a base of 5 at approximately a quarter-turn from centre. LED2 blinks slowly at this point.
 * Anticlockwise settings generate grains at even amplitude and synchronous spacing.
 * Clockwise settings generate grains at random amplitudes and asynchronous spacing.
 * LED2 blinks at double rate where grains no longer overlap sufficiently to sum smoothly. This point varies with pitch and speed settings.
 * At either extreme setting, one grain is generated per four grain lengths.
 
-Density increases automatically when pitching down or increasing speed to maintain coverage. A ceiling of 20 grains is shared between both requirements.
-
-**K6**: Spray sets deviation of grain read positions from the read head.
-* Density above the base of 5 requires spray (**K6>0**).
+**K6**: SPRAY 
+* Sets deviation of grain read positions from the read head.
 * The point at which additional density becomes available varies with grain length, pitch and speed.
 
 #### Reconstruction
