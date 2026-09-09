@@ -111,7 +111,7 @@ Numbered **0** to **3**, left to right.
 
 *NB: Due to the laws of reality, if you play back audio at* **K5**<1x the output reflects material at an increasingly greater delay from the input. Playing back >1x reuses audio in the buffer. Don't be angry about this, we can't control time yet.*
 
-### **K3**: DENSITY 
+#### **K3**: DENSITY 
 * Sets the number and distribution of overlapping grains.
 * Maximum density is generated at the centre position. At **K0**=unison, **K5**=1x, and **K6**=0, maximum density is 5, and is increased automatically for cloud coverage, presence of pitch intervals, and **K6**>0.
 * Turning either way decreases the number of grains, reaching a base of 5 at approximately a quarter-turn from centre. LED2 blinks slowly at this point.
@@ -120,7 +120,7 @@ Numbered **0** to **3**, left to right.
 * LED2 blinks at double rate where grains no longer overlap sufficiently to sum smoothly. This point varies with pitch and speed settings.
 * At either extreme setting, one grain is generated per four grain lengths.
 
-### **K6**: SPRAY 
+#### **K6**: SPRAY 
 * Sets deviation of grain read positions from the read head.
 * The point at which additional density becomes available varies with grain length, pitch and speed.
 
