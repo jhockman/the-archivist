@@ -194,14 +194,14 @@ Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW0
 
 Numbered **0** to **3**, left to right.
 
-On entry, **LED_0** displays 🔴 dim red and **LED_1–3** are off until a knob is moved.
+On entry, **LED0** displays 🔴 dim red and **LED1–3** are off until a knob is moved.
 
 | LED | DESCRIPTION |
 |---|---|
-| **LED_0** | Brightness ramps during the FSU commit hold (3 sec).|
-| **LED_1** | Default value of the chosen parameter.|
-| **LED_2** | Stored user value of the chosen parameter.|
-| **LED_3** | Live knob position. Flashes when the knob value matches the stored user value.|
+| **LED0** | Brightness ramps during the FSU commit hold (3 sec).|
+| **LED1** | Default value of the chosen parameter.|
+| **LED2** | Stored user value of the chosen parameter.|
+| **LED3** | Live knob position. Flashes when the knob value matches the stored user value.|
 
 | KNOB | SETTING | DESCRIPTION | DEFAULT | RANGE |
 |---|---|---|---|---|
@@ -436,14 +436,14 @@ Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW0
 
 Numbered **0** to **3**, left to right.
 
-On entry, **LED_0** displays dim red and **LED_1–3** are off until a knob is moved.
+On entry, **LED0** displays dim red and **LED1–3** are off until a knob is moved.
 
 | LED | DESCRIPTION |
 |---|---|
-| **LED_0** | Brightness ramps during the FSU commit hold (3 sec).|
-| **LED_1** | Default value of the chosen parameter.|
-| **LED_2** | Stored user value of the chosen parameter.|
-| **LED_3** | Live knob position. Flashes when the knob value matches the stored user value.|
+| **LED0** | Brightness ramps during the FSU commit hold (3 sec).|
+| **LED1** | Default value of the chosen parameter.|
+| **LED2** | Stored user value of the chosen parameter.|
+| **LED3** | Live knob position. Flashes when the knob value matches the stored user value.|
 
 | KNOB | SETTING | DESCRIPTION | DEFAULT | RANGE |
 |---|---|---|---|---|
