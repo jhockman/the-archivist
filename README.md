@@ -62,7 +62,7 @@ Parameters are held and recalled on passthrough between toggling control pages.
 **FSU Button** operates the same in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
 
 ### KNOB
-Knob parameterisation differs per mode and pages. Please see knob layout descriptions in the relevant sections below. 
+Knob parameterisation differs per mode and pages. Please see knob layout descriptions in the relevant sections. 
 
 ## MODES
 
@@ -74,7 +74,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 |---|---|---|---|
 | **K0** | SPEED | Varispeed control of tape playback (interacts with K4 loop). | Centre=full stop; CCW reverse, CW forwards. Detents at 0, ±0.5x, ±1x and ±2x.|
 | **K1** | DRIVE | Record drive into the tape. | CCW=clean, CW=hot.|
-| **K2** | RETENTION | Decimation, metrical duration and cassette type. See [Retention and Strata](#retention-and-strata) below. | Discrete or continuous, per **SETTINGS K0**.|
+| **K2** | RETENTION | Decimation, metrical duration and cassette type. See [Retention and Strata](#retention-and-strata). | Discrete or continuous, per **SETTINGS K0**.|
 | **K3** | ECHO | Tape echo (print-through) over the K4 loop duration. | CCW=off, CW=full effect.|
 | **K4** | LENGTH | Shortens the tape loop. | The further CCW, the shorter the loop.|
 | **K5** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
@@ -146,7 +146,7 @@ Numbered **0** to **3**, left to right.
 | LED | DESCRIPTION |
 |---|---|
 | **LED0** | Retention. 8 colours representing strata; continuous blends between colours.|
-| **LED1** | Pitch. 🔵 Unison=Bright blue (**flashing for perfect reonstruction**); ⚪ Octaves=White; 🟠 Fifth up=orange; 🔵 Fifth down=Dark blue; Otherwise dims toward unison.|
+| **LED1** | Pitch. 🔵 Unison=Bright blue (**flashing for perfect reonstruction**); ⚪ Octaves=White; 🟠 +5th=Orange; 🔵 -5th=Dark blue; Otherwise dims toward unison.|
 | **LED2** | Speed and direction, plus density flashing (see above).|
 | **LED3** | Capture. 🔵 Blue when engaged.|
 
