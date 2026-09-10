@@ -94,7 +94,7 @@ Numbered **0** to **3**, left to right.
 | LED | DESCRIPTION |
 |---|---|
 | **LED0** | Retention stratum, as above.|
-| **LED1** | Speed. 🔴 Flashing red at the stop, 🔵 flashing blue at ±1x, ⚪ white at ±0.5x and ±2x.|
+| **LED1** | Speed. 🔴 0x=Flashing red; 🔵 ±1x=Flashing blue; ⚪ ±0.5x/±2x=White.|
 | **LED2** | Cassette type, drawn on the retention palette.|
 | **LED3** | Capture. 🔵 Blue when engaged.|
 
@@ -129,7 +129,7 @@ Numbered **0** to **3**, left to right.
 #### **K3**: DENSITY 
 * Sets the number and distribution of overlapping grains.
 * Maximum density is generated at the centre position. At **K0**=unison, **K5**=1x, and **K6**=0, maximum density is 5, and is increased automatically for cloud coverage, presence of pitch intervals, and **K6**>0.
-* Turning either way decreases the number of grains, reaching a base of 5 at approximately a quarter-turn from centre. LED2 blinks slowly at this point.
+* Turning either way decreases the number of grains continuously. LED2 blinks slowly at centre (maximum density).
 * Anticlockwise settings generate grains at even amplitude and synchronous spacing.
 * Clockwise settings generate grains at random amplitudes and asynchronous spacing.
 * LED2 blinks at double rate where grains no longer overlap sufficiently to sum smoothly. This point varies with pitch and speed settings.
@@ -145,8 +145,8 @@ Numbered **0** to **3**, left to right.
 
 | LED | DESCRIPTION |
 |---|---|
-| **LED0** | Retention. 8 colours representing strata; blends between colours when the retention is continuous.|
-| **LED1** | Pitch. 🔵 Bright blue at unison, **flashing when the null holds**. ⚪ White at octaves, 🟠 orange at fifth up, 🔵 dark blue at fifth down. Elsewhere it dims toward unison.|
+| **LED0** | Retention. 8 colours representing strata; continuous blends between colours.|
+| **LED1** | Pitch. 🔵 Unison=Bright blue (**flashing for perfect reonstruction**); ⚪ Octaves=White; 🟠 Fifth up=orange; 🔵 Fifth down=Dark blue; Otherwise dims toward unison.|
 | **LED2** | Speed and direction, plus density flashing (see above).|
 | **LED3** | Capture. 🔵 Blue when engaged.|
 
@@ -155,7 +155,7 @@ Numbered **0** to **3**, left to right.
 * 🔴 **0x**: Flashing red.
 * 🟢 **±1x**: Green.
 * ⚪ **±0.5x and ±2x**: White.
-* 🔵 🟠 **Everywhere else**: Blue forwards, orange reverse, brighter the faster it goes.
+* 🔵 🟠 **Otherwise**: Blue forwards, orange reverse.
 * **K3** coverage landmarks (see above).
 
 With **SETTINGS K5**=Position, LED2 instead displays a brightness ramp: off at full CCW, brightening through blue to white at full CW. There are no K3 blinks in position mode.
@@ -169,16 +169,16 @@ With **SETTINGS K5**=Position, LED2 instead displays a brightness ramp: off at f
 | **K2** | RETENTION | Selects stratum with increasing decimation and context. | Continuous or discrete, per **SETTINGS K0**. Discrete = 8 strata from full CW (48 kHz, 1 bar) to full CCW (3 kHz, 12 bars).|
 | **FSU CV INPUT** | SYNC | Clock source for capture and grain triggers. | Unsynced defaults to 120 BPM.|
 
-| | RATE | CONTEXT |
-|---|---|---|
-| **Full CW** | 48 kHz | 1 bar|
-| | 24 kHz | 2 bars|
-| | 16 kHz | 3 bars|
-| | 12 kHz | 4 bars|
-| | 8 kHz | 6 bars|
-| | 6 kHz | 8 bars|
-| | 4 kHz | 10 bars|
-| **Full CCW** | 3 kHz | 12 bars|
+| | RATE | CONTEXT | LED0 |
+|---|---|---|---|
+| **Full CW** | 48 kHz | 1 bar | <img src="https://placehold.co/12x12/FF0000/FF0000.png"> red |
+| | 24 kHz | 2 bars | <img src="https://placehold.co/12x12/00D9FF/00D9FF.png"> cyan |
+| | 16 kHz | 3 bars | <img src="https://placehold.co/12x12/FF5900/FF5900.png"> orange |
+| | 12 kHz | 4 bars | <img src="https://placehold.co/12x12/2633FF/2633FF.png"> blue |
+| | 8 kHz | 6 bars | <img src="https://placehold.co/12x12/FFCC00/FFCC00.png"> yellow |
+| | 6 kHz | 8 bars | <img src="https://placehold.co/12x12/FF00B3/FF00B3.png"> magenta |
+| | 4 kHz | 10 bars | <img src="https://placehold.co/12x12/1AFF1A/1AFF1A.png"> green |
+| **Full CCW** | 3 kHz | 12 bars | <img src="https://placehold.co/12x12/8000FF/8000FF.png"> violet |
 
 Coarser strata reach further back in time, so at a given speed the same phrase gives additional context.
 
@@ -252,6 +252,7 @@ Similarly, follow above instructions for reconstruction, and modify **K5** to de
 * At the far ends of **K3** you are hearing individual grains with silence between them. That is the intent, but the window shape set by **K1** is much more exposed there than it is in the middle of the knob.
 
 *Use at your own risk, but have fun!*
+
 
 
 <!-- # The Archivist
