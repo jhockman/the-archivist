@@ -18,7 +18,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 ## CONTENTS
 
 * [Install](#install)
-* [Operation](#operation) — [Switches](#switches) · [FSU Button](#fsu-button) · [Knob](#knob)
+* [Operation](#operation)
 * [Modes](#modes) — [TAPE](#mode-1-tape-sw1lc) · [GRAINS](#mode-2-grains-sw1r)
 * [Retention and Strata](#retention-and-strata)
 * [Settings Page](#settings-page)
