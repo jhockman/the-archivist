@@ -231,15 +231,15 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 #### RECONSTRUCTION
 
-Set **SW0=L/K0** = unison (**LED1**=deep blue (~0.75)), **SW0=R/K0** = centre, **K5** = 1x (~0.75), **K6** = full CCW, **SW0=R/K1** = 0. (no reverse). **LED1** flashes blue when all of those hold.
+* Set **SW0=L/K0** = unison (**LED1**=deep blue (~0.75)), **SW0=R/K0** = centre, **K5** = 1x (~0.75), **K6** = full CCW, **SW0=R/K1** = 0. (no reverse). **LED1** flashes blue when all of those hold.
 
 #### PITCH SHIFTING
 
-Follow above instructions for reconstruction, and modify **K0** to desired pitch. Slight adjustments to other parameters may yield improved results.
+* Follow above instructions for reconstruction, and modify **K0** to desired pitch. Slight adjustments to other parameters may yield improved results.
 
 #### TIME SCALING
 
-Similarly, follow above instructions for reconstruction, and modify **K5** to desired speed. Adjustments to other parameters (notably **K4** and **K6**) will result in improved coverage at **K5** nearer to 0x.
+* Similarly, follow above instructions for reconstruction, and modify **K5** to desired speed. Adjustments to other parameters (notably **K4** and **K6**) will result in improved coverage at **K5** nearer to 0x.
 
 ---
 
