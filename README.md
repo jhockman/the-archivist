@@ -59,7 +59,7 @@ Parameters are held and recalled on passthrough between toggling control pages.
 | **Hold 3 sec, SW0=C** | Enter/exit **SETTINGS** page.|
 | **Hold 3 sec, SW0=L or R** | Clears retention in **TAPE** or **GRAINS**.|
 
-**FSU Button** operates the same in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
+**FSU Button** operation is equivalent in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
 
 ### KNOB
 Knob parameterisation differs per mode and pages. Please see knob layout descriptions in the relevant sections. 
