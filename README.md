@@ -7,7 +7,7 @@
 <p align="left">
   <img alt="Platform" src="https://img.shields.io/badge/platform-Noise_Engineering_Versio-1a1a1a">
   <img alt="Format" src="https://img.shields.io/badge/format-10hp_Eurorack-4a4a4a">
-  <a href="../../releases/latest"><img alt="Latest firmware" src="https://img.shields.io/github/v/release/YOURUSER/the-archivist?label=firmware"></a>
+  <!--<a href="../../releases/latest"><img alt="Latest firmware" src="https://img.shields.io/github/v/release/YOURUSER/the-archivist?label=firmware"></a>-->
 </p>
 
 A [Detuned Transmissions (DTND)](https://detunedtransmissions.com/) firmware for the [Noise Engineering Versio](https://noiseengineering.us/pages/world-of-versio/).
