@@ -49,7 +49,7 @@ SW0 = Switch 0 (top); SW1 = Switch 1 (bottom)
 | **SW0** | L/C | Main controls | Main controls for either mode.|
 | **SW0** | R | Alt controls | Alternative controls for either mode.|
 
-Parameters are held and recalled on passthrough between toggling control pages.
+Parameter values are stored upon toggling **SW0** control pages and recalled on passthrough.
 
 ### FSU BUTTON
 
@@ -76,7 +76,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 | **K1** | DRIVE | Record drive into the tape. | CCW=clean, CW=hot.|
 | **K2** | RETENTION | Decimation, metrical duration and cassette type. See [Retention and Strata](#retention-and-strata). | Discrete or continuous, per **SETTINGS K0**.|
 | **K3** | ECHO | Tape echo (print-through) over the K4 loop duration. | CCW=off, CW=full effect.|
-| **K4** | LENGTH | Shortens the tape loop. | The further CCW, the shorter the loop.|
+| **K4** | LENGTH | Tape loop duration. | CCW=short, CW=long.|
 | **K5** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
 | **K6** | K-FIELD DEPTH | Modulation depth. | CCW=off, CW=full effect.|
 
@@ -110,8 +110,8 @@ Numbered **0** to **3**, left to right.
 | **K1** | WINDOW | Grain envelope shape. | Centre=a plateau of pure Hann. CCW morphs to an exponential decay; CW morphs to its reverse, a swell.|
 | **K2** | RETENTION | Capture decimation and metrical duration (see [Retention and Strata](#retention-and-strata) below). | Discrete or continuous, per **SETTINGS K0**.|
 | **K3** | DENSITY | Grain overlap (see below). | Centre=maximum overlap; full CCW=minimum isochronous; full CW=minimum random.|
-| **K4** | LENGTH | Grain length. | 50 ms at full CCW to 2 s at full CW, exponentially.|
-| **K5** | MODIFY | Speed and direction of playback, or read position — see **SETTINGS K5**. | Continuous; centre=0x, full CCW=−2x, full CW=+2x, with detents at ±0.5x, ±1x and ±2x.|
+| **K4** | LENGTH | Grain length. | full CCW=50ms,full CW=2s |
+| **K5** | MODIFY | Speed and direction of playback, or read position — see **SETTINGS K5**. | Continuous; centre=0x, full CCW=−2x, full CW=+2x (detents at ±0.5x, ±1x and ±2x).|
 | **K6** | SPRAY | Gaussian scatter of grain read positions. | CCW=none (grains follow read head), CW=random position.|
 
 #### Alt Controls (SW0=R)
