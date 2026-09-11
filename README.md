@@ -245,12 +245,6 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 ## DISCLAIMER
 
-**Known (*but possibly enjoyable*) behaviour:**
-
-* In **GRAINS**, the alignment search that keeps consecutive grains in phase can only reach a fixed distance, while the error it corrects grows with grain length. At long grains it stands down, so pitch and speed offsets that sound clean at short grains may need **SW0=L/K4** brought down to stay tidy.
-
-* At the far ends of **K3** you are hearing individual grains with silence between them. That is the intent, but the window shape set by **K1** is much more exposed there than it is in the middle of the knob.
-
 *Use at your own risk, but have fun!*
 
 
