@@ -21,7 +21,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 * [Operation](#operation)
 * [Modes](#modes): [TAPE](#mode-1-tape-sw1lc) · [GRAINS](#mode-2-grains-sw1r)
 * [Retention and Strata](#retention-and-strata)
-* [Settings Page](#settings-page)
+* [Settings](#settings-page)
 * [Examples](#examples)
 * [Disclaimer](#disclaimer)
 
@@ -184,7 +184,7 @@ Coarser strata reach further back in time, so at a given speed the same phrase g
 
 ---
 
-## SETTINGS PAGE
+## SETTINGS
 
 Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW0=C**, or **FSU** held at boot.
 
