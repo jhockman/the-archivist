@@ -123,6 +123,7 @@ Numbered **0** to **3**, left to right.
 | **K2** | GLIDE | How fast speed and spacing changes are followed. | CCW=20 ms, CW=1 s.|
 | **K3** | SWING / HUMANISE | Grain timing. | CCW of centre=swing; CW of centre=random lateness.|
 | **K4** | DISSOLVE | Read point smoothing on write head overtake. | CCW=immediate; CW=full smoothing.|
+| **K6** | DIFFUSION | Schroeder stereo allpass series. | CCW=full dry; CW=full wet.|
 
 *NB: Due to the laws of reality, if you play back audio at **K5**<1x the output reflects material at an increasingly greater delay from the input. Playing back >1x reuses audio in the buffer. Don't be angry about this, we can't control time yet.*
 
