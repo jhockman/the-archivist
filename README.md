@@ -61,7 +61,7 @@ Parameter values are stored upon toggling **SW0** control pages and recalled on 
 
 **FSU Button** operation is equivalent in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
 
-### KNOB
+### KNOBS
 Knob parameterisation differs per mode and pages. Please see knob layout descriptions in the relevant sections. 
 
 ## MODES
