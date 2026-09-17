@@ -72,7 +72,8 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 <img src="https://github.com/user-attachments/assets/89b91d4d-5a92-48a9-b947-af8f8b8c842b" width="700">
 </p>
 
-TAPE centers around the 
+*Figure:* Eltro Mark II Information Rate Changer (circa 1960) tape machine provided independent minipulation of pitch and time through a rotating 4-head drum.
+
 #### Main Controls (SW0=L/C)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
@@ -111,7 +112,7 @@ Numbered **0** to **3**, left to right.
 <p align="left">
 <img src="https://github.com/user-attachments/assets/4c8648b5-247e-4b5d-97b9-dd3d2ba2a4b4" width="700">
 </p>
-
+*Figure:* The E-mu Emulator II (1985) with a DPCM sampling engine with residual *μ*-law 8-bit companding and slope overload.
 
 #### Main Controls (SW0=L/C)
 
