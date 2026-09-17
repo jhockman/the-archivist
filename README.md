@@ -72,12 +72,12 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
-| **K0** | SPEED | Varispeed control of tape playback (interacts with K4 loop). | Centre=full stop; CCW reverse, CW forwards. Detents at 0, ±0.5x, ±1x and ±2x.|
+| **K0** | PITCH | Pitch. | Full CCW=−24 semitones, unison at 0.775, full CW=+12 semitones.|
 | **K1** | DRIVE | Record drive into the tape. | CCW=clean, CW=hot.|
 | **K2** | RETENTION | Decimation, metrical duration and cassette type. See [Retention and Strata](#retention-and-strata). | Discrete or continuous, per **SETTINGS K0**.|
 | **K3** | ECHO | Tape echo (print-through) over the K4 loop duration. | CCW=off, CW=full effect.|
 | **K4** | LENGTH | Tape loop duration. | CCW=short, CW=long.|
-| **K5** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
+| **K5** | SPEED/POS | Speed and direction of playback, or read position — see **SETTINGS K5**. | 
 | **K6** | K-FIELD DEPTH | Modulation depth. | CCW=off, CW=full effect.|
 
 #### Alt Controls (SW0=R)
@@ -85,6 +85,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
 | **K4** | SPLICE ANGLE | Tape splice angle. | CCW=20ms; CW=500ms.|
+| **K6** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
 
 
 #### TAPE LEDs
@@ -111,7 +112,7 @@ Numbered **0** to **3**, left to right.
 | **K2** | RETENTION | Capture decimation and metrical duration (see [Retention and Strata](#retention-and-strata) below). | Discrete or continuous, per **SETTINGS K0**.|
 | **K3** | DENSITY | Grain overlap (see below). | Centre=maximum overlap; full CCW=minimum isochronous; full CW=minimum random.|
 | **K4** | LENGTH | Grain length. | full CCW=50ms,full CW=2s |
-| **K5** | MODIFY | Speed and direction of playback, or read position — see **SETTINGS K5**. | Continuous; centre=0x, full CCW=−2x, full CW=+2x (detents at ±0.5x, ±1x and ±2x).|
+| **K5** | SPEED/POS | Speed and direction of playback, or read position — see **SETTINGS K5**. | Continuous; centre=0x, full CCW=−2x, full CW=+2x (detents at ±0.5x, ±1x and ±2x).|
 | **K6** | SPRAY | Gaussian scatter of grain read positions. | CCW=none (grains follow read head), CW=random position.|
 
 #### Alt Controls (SW0=R)
