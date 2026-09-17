@@ -68,6 +68,11 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 
 ### MODE 1: TAPE (SW1=L/C)
 
+<p align="left">
+<img src="https://github.com/user-attachments/assets/89b91d4d-5a92-48a9-b947-af8f8b8c842b" width="700">
+</p>
+
+TAPE centers around the 
 #### Main Controls (SW0=L/C)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
@@ -102,6 +107,11 @@ Numbered **0** to **3**, left to right.
 ---
 
 ### MODE 2: GRAINS (SW1=R)
+
+<p align="left">
+<img src="https://github.com/user-attachments/assets/4c8648b5-247e-4b5d-97b9-dd3d2ba2a4b4" width="700">
+</p>
+
 
 #### Main Controls (SW0=L/C)
 
