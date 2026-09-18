@@ -72,7 +72,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 <img src="https://github.com/user-attachments/assets/89b91d4d-5a92-48a9-b947-af8f8b8c842b" width="700">
 </p>
 
-*Figure:* Eltro Mark II Information Rate Changer (circa 1960) tape machine provided independent minipulation of pitch and time through a rotating 4-head drum.
+*Figure:* Eltro Mark II Information Rate Changer (circa 1960) tape machine provided independent manipulation of pitch and time through a rotating 4-head drum. See [Eltro decription by Wendy Carlos for more information](https://www.wendycarlos.com/other/Eltro-1967/).
 
 #### Main Controls (SW0=L/C)
 
