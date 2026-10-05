@@ -259,7 +259,7 @@ On entry, **LED0** displays 🔴 dim red and **LED1–3** are off until a knob i
 |---|---|---|---|---|
 | **K0** | GLOBAL RETENTION MODE | Global **K2** Retention control in both modes. | Continuous | 0 = Continuous (smooth transition between strata); 1 = Discrete.|
 | **K1** | GLOBAL STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modification expands to stereo. | 0.5 (mono) | 0. = mono; 1. = hard L/R.|
-▎ **K2** | TAPE DISINTEGRATION | Whether earned wear travels over time or holds where the dial sets it. | On | 0 = On; 1 = Off.|
+| **K2** | DISINTEGRATION | Whether earned wear travels over time or holds where the dial sets it. | On | 0 = On; 1 = Off.|
 | **K3** | TAPE SCAN REFERENCE | Speed target of advance. | K0 | 0 = K0; 1 = 1x (unity).|
 | **K4** | TAPE RHYTHM | Rhythm derived by tape splicing at highest stratum is inherited by others. | Bar | 0 = Bar; 1 = Memory (rhythm is mapped to context at lower strata).|
 | **K6** | GRAINS SYNC | Sync grain spawning to incoming clock at the FSU CV input. | Off | 0 = free-running; 1 = spawn at metrical divisions in **K3** sparse region.|
