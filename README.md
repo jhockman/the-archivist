@@ -51,6 +51,9 @@ SW0 = Switch 0 (top); SW1 = Switch 1 (bottom)
 
 Parameter values are stored upon toggling **SW0** control pages and recalled on passthrough. *NB: starting the module with* **SW0=R** *will snapshot knob positions which are held on change to* **SW0=L**.
 
+### INPUTS AND OUTPUTS
+
+**L-INPUT** is mono audio input; **R-INPUT** takes trigger or gate to automate capture. While captured, monitor follows L-input so disengaging capture and re-enabling captures input (not module output). Module outputs through stereo pair with stereo spread controlled through **SETTINGS K1**.
 ### FSU BUTTON
 
 | GESTURE | DESCRIPTION |
@@ -60,10 +63,6 @@ Parameter values are stored upon toggling **SW0** control pages and recalled on 
 | **Hold 3 sec, SW0=L or R** | Clears retention in **TAPE** or **GRAINS**.|
 
 **FSU Button** operation is equivalent in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
-
-### INPUTS
-
-L-input is mono audio input; R-input takes trigger or gate to automate capture. While captured, monitor follows L-input so disengaging capture and re-enabling captures input (not module output).
 
 ### KNOBS
 Knob parameterisation differs per mode and pages. Please see knob layout descriptions in the relevant sections. 
@@ -76,7 +75,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 <img src="https://github.com/user-attachments/assets/89b91d4d-5a92-48a9-b947-af8f8b8c842b" width="700">
 </p>
 
-*Figure:* Eltro Mark II Information Rate Changer (circa 1960) tape machine provided independent manipulation of pitch and time through a rotating 4-head drum. See [Eltro decription by Wendy Carlos for more information](https://www.wendycarlos.com/other/Eltro-1967/).
+*Figure:* Eltro Mark II Information Rate Changer (circa 1960) tape machine. See [Eltro decription by Wendy Carlos for more information](https://www.wendycarlos.com/other/Eltro-1967/).
 
 #### Main Controls (SW0=L/C)
 
@@ -119,7 +118,7 @@ Numbered **0** to **3**, left to right.
 <img src="https://github.com/user-attachments/assets/4c8648b5-247e-4b5d-97b9-dd3d2ba2a4b4" width="700">
 </p>
 
-*Figure:* The E-mu Emulator II (1985) with a DPCM sampling engine.
+*Figure:* The E-mu Emulator II (1985).
 
 #### Main Controls (SW0=L/C)
 
