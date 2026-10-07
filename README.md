@@ -300,7 +300,7 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 #### DISINTEGRATION
 
-* With default setting for disintegration (**K2**=0) and **SW0=R K3** > 0, captured audio is continually degraded through emulated medium destruction (e.g., wow/flutter, magnetic distortion). Higher **SW0=R K3** settings result in worse starting degradation and faster disintegration rates. 
+* With default setting for disintegration (**K2**=0) and **SW0=R K3** > 0, captured audio is continually degraded through emulated medium destruction (e.g., wow/flutter, magnetic distortion). Higher **SW0=R K3** settings result in worse starting degradation and faster disintegration rates (from 5–15 minutes). 
 
 ---
 
