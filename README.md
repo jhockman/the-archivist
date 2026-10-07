@@ -244,8 +244,6 @@ Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW0
 
 ### SETTINGS LEDs
 
-Numbered **0** to **3**, left to right.
-
 #### FIRMWARE VERSION ####
 
 On entry to **SETTINGS**, LEDs indicates the firmware version. v1 displays: **LED0** = 🔴 dim red with **LED1–3** off. Subsequent versions will be listed here with a change log when available.
