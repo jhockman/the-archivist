@@ -162,7 +162,7 @@ Numbered **0** to **3**, left to right.
 | LED | DESCRIPTION |
 |---|---|
 | **LED0** | Retention. 8 colours representing strata; continuous blends between colours.|
-▎ **LED1** | Pitch. 🟢 Unison=Green; ⚪ Octaves=White; 🟠 +5th=Orange; 🔵 −5th=Dark blue; Otherwise dims toward unison.|
+| **LED1** | Pitch. 🟢 Unison=Green; ⚪ Octaves=White; 🟠 +5th=Orange; 🔵 −5th=Dark blue; Otherwise dims toward unison.|
 | **LED2** | Speed and direction, plus density flashing (see above).|
 | **LED3** | Capture. 🔵 Blue when engaged.|
 
