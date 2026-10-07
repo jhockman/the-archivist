@@ -90,6 +90,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
+| **K3** | WEAR | Wow/flutter and magnetic distortion; disintegration enabled with **SETTINGS K2** = 0. | CCW=no wear; CW=broken medium.|
 | **K4** | SPLICE ANGLE | Tape splice angle. | CCW=20ms; CW=500ms.|
 | **K5** | HEAD SPLICING | drum head splices to tape loop length. | 1, 2, 4, 8, 16, 32. Centre=8.|
 | **K6** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
