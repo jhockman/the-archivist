@@ -297,6 +297,12 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 * Similarly, follow above instructions for reconstruction, and modify **K5** to desired speed. Adjustments to other parameters (notably **K4** and **K6**) will result in improved coverage at **K5** nearer to 0x.
 
+### TAPE
+
+#### DISINTEGRATION
+
+* With default setting for disintegration (**K2**=0) and **SW0=R K3** > 0, captured audio is continually degraded through emulated medium destruction (e.g., wow/flutter, magnetic distortion). Higher **SW0=R K3** settings result in worse starting degradation and faster disintegration rates. 
+
 ---
 
 ## DISCLAIMER
