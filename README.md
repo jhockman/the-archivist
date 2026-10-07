@@ -114,7 +114,7 @@ Numbered **0** to **3**, left to right.
 <img src="https://github.com/user-attachments/assets/4c8648b5-247e-4b5d-97b9-dd3d2ba2a4b4" width="700">
 </p>
 
-*Figure:* The E-mu Emulator II (1985) with a DPCM sampling engine with residual *μ*-law 8-bit companding and slope overload.
+*Figure:* The E-mu Emulator II (1985) with a DPCM sampling engine.
 
 #### Main Controls (SW0=L/C)
 
