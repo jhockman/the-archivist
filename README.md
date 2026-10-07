@@ -49,7 +49,7 @@ SW0 = Switch 0 (top); SW1 = Switch 1 (bottom)
 | **SW0** | L/C | Main controls | Main controls for either mode.|
 | **SW0** | R | Alt controls | Alternative controls for either mode.|
 
-Parameter values are stored upon toggling **SW0** control pages and recalled on passthrough.
+Parameter values are stored upon toggling **SW0** control pages and recalled on passthrough. *NB: starting the module with* **SW0=R** *will snapshot knob positions which are held on change to* **SW0=L**.
 
 ### FSU BUTTON
 
