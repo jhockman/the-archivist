@@ -139,8 +139,6 @@ Numbered **0** to **3**, left to right.
 | **K4** | DISSOLVE | Read point smoothing on write head overtake. | CCW=immediate; CW=full smoothing.|
 | **K6** | SPACE | Schroeder allpass diffusion with tank reverb. | CCW to centre=dry to full diffusion; centre to CW=diffusion held full, tank decay 1-9 s.|
 
-*NB: Due to the laws of reality, if you play back audio at **K5**<1x the output reflects material at an increasingly greater delay from the input. Playing back >1x reuses audio in the buffer. Don't be angry about this, we can't control time yet.*
-
 #### **K3**: DENSITY 
 * Sets the number and distribution of overlapping grains.
 * Maximum density is generated at the centre position. At **K0**=unison, **K5**=1x, and **K6**=0, maximum density is 5, and is increased automatically for cloud coverage, presence of pitch intervals, and **K6**>0.
@@ -293,7 +291,9 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 #### TIME SCALING
 
-* Similarly, follow above instructions for reconstruction, and modify **K5** to desired speed. Adjustments to other parameters (notably **K4** and **K6**) will result in improved coverage at **K5** nearer to 0x. With **SETTINGS** **K5** = 1, if **LK5** (speed) is at 0x (0.5), **RK5**. may be used to control position in the buffer without advancing speed.  
+* Similarly, follow above instructions for reconstruction, and modify **K5** to desired speed. Adjustments to other parameters (notably **K4** and **K6**) will result in improved coverage at **K5** nearer to 0x.
+* With **SETTINGS** **K5** = 1, if **LK5** (speed) is at 0x (0.5), **RK5**. may be used to control position in the buffer without advancing speed.
+* *NB: Due to the laws of reality, while uncaptured, if you play back audio at **K5**<1x the output reflects material at an increasingly greater delay from the input. Playing back >1x reuses audio in the buffer. Don't be angry about this, we can't control time yet.*
 
 ### TAPE
 
