@@ -246,7 +246,7 @@ Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW0
 
 Numbered **0** to **3**, left to right.
 
-On entry, **LED0** displays 🔴 dim red and **LED1–3** are off until a knob is moved.
+On entry, LEDs indicates the firmware version. v1 displays: **LED0** = 🔴 dim red and **LED1–3** are off. Adjusting knobs overtakes the firmware indicator, and displaying the following:
 
 | LED | DESCRIPTION |
 |---|---|
@@ -295,6 +295,10 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 ---
 
 ## DISCLAIMER
+
+Inspiration was drawn from the instruments (specs, user and service manuals) listed in the above; however, a sufficient use of artistic license has been applied throughout an iterative development process, resulting in the amalgamation which is this firmware.
+
+This is an ongoing project, please look out for updates.
 
 *Use at your own risk, but have fun!*
 
