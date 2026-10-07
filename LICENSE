@@ -1,0 +1,29 @@
+The Archivist — firmware for the Noise Engineering Versio
+Copyright © 2026 Detuned Transmissions (Jason Hockman). All rights reserved.
+
+PERMITTED
+  You may download the firmware binary (the-archivist.bin) and flash it to
+  Noise Engineering Versio hardware, for personal or commercial music-making,
+  free of charge.
+
+NOT PERMITTED without prior written permission
+  - Resale of the firmware, or any charge for providing it.
+  - Distribution as part of any product, module, kit, or paid bundle.
+  - Modification, reverse engineering, or decompilation of the binary.
+  - Removal or alteration of this notice.
+
+GitHub forks and mirrors of this repository are permitted under GitHub's
+Terms of Service and are not affected by the restrictions above.
+
+NO WARRANTY
+  The firmware is provided "as is", without warranty of any kind, express or
+  implied, including merchantability, fitness for a particular purpose, and
+  non-infringement. In no event shall the copyright holder be liable for any
+  claim, damages, or other liability arising from the firmware or its use,
+  including damage to hardware.
+
+The source code is not published at this time. This is not an open-source
+licence.
+
+Built with libDaisy (MIT) by Electrosmith Corp.
+Contact: <your email or detunedtransmissions.com>
