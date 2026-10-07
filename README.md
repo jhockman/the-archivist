@@ -23,7 +23,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 * [Retention and Strata](#retention-and-strata)
 * [Settings](#settings)
 * [Examples](#examples)
-* [Disclaimer](#disclaimer)
+* [Licence](#licence)
 
 ---
 
@@ -311,9 +311,18 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 Inspiration was drawn from the instruments (specs, user and service manuals) listed above; however, a sufficient use of artistic license has been applied throughout an iterative development process, resulting in the amalgam of is this firmware.
 
-This is an ongoing project, please look out for updates.
+This is an ongoing project, please look out for updates. Provided "as is", without warranty of any kind.
 
-*Use at your own risk, but have fun!*
+*Use at your own risk, but have fun.*
 
+## LICENCE
+
+© 2026 Detuned Transmissions. All rights reserved.
+
+The firmware binary is free to download and use on Noise Engineering Versio hardware. Resale, commercial distribution, and inclusion in any product or paid bundle are not permitted without written permission.
+
+Full terms in [LICENSE](LICENSE).
+
+Built with libDaisy (MIT) by Electrosmith Corp.
 
 
