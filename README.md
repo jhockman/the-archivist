@@ -296,7 +296,7 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 #### TIME SCALING
 
 * Similarly, follow above instructions for reconstruction, and modify **K5** to desired speed. Adjustments to other parameters (notably **K4** and **K6**) will result in improved coverage at **K5** nearer to 0x.
-* With **SETTINGS** **K5** = 1, if **LK5** (speed) is at 0x (0.5), **RK5**. may be used to control position in the buffer without advancing speed.
+* With **SETTINGS** **K5** = 1 and **LK5** (speed) at 0x (0.5), **RK5** may be used to control position in the buffer without advancing speed.
 * *NB: Due to the laws of reality, while uncaptured, if you play back audio at **K5**<1x the output reflects material at an increasingly greater delay from the input. Playing back >1x reuses audio in the buffer. Don't be angry about this, we can't control time yet.*
 
 ### TAPE
