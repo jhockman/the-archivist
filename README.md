@@ -61,6 +61,10 @@ Parameter values are stored upon toggling **SW0** control pages and recalled on 
 
 **FSU Button** operation is equivalent in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
 
+### INPUTS
+
+L-input is mono audio input; R-input takes trigger or gate to automate capture. While captured, monitor follows L-input so disengaging capture and re-enabling captures input (not module output).
+
 ### KNOBS
 Knob parameterisation differs per mode and pages. Please see knob layout descriptions in the relevant sections. 
 
