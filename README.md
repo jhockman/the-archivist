@@ -40,7 +40,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 ## OPERATION
 
 ### SWITCHES
-SW0 = Switch 0 (top); SW1 = Switch 1 (bottom)
+SW0 = Switch 0 (top); SW1 = Switch 1 (bottom).
 
 | SWITCH | SETTING | MODE/CTRL | DESCRIPTION |
 |---|---|---|---|
