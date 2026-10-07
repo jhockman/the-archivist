@@ -262,7 +262,7 @@ Adjusting any knob overtakes the firmware indicator, and LEDs indicate the follo
 | **K2** | DISINTEGRATION | Whether earned wear travels over time or holds where the dial sets it. | On | 0 = On; 1 = Off.|
 | **K3** | TAPE SCAN REFERENCE | Speed target of advance. | K0 | 0 = K0; 1 = 1x (unity).|
 | **K4** | TAPE RHYTHM | Rhythm derived by tape splicing at highest stratum is inherited by others. | Bar | 0 = Bar; 1 = Memory (rhythm is mapped to context at lower strata).|
-| **K5** | POSITION | Grains **RK5** as position control. | Off | 0 = **RK5** mirrors **LK5** speed control; 1 =  **RK5** as position control (**LK5** remains speed).|
+| **K5** | GRAINS POSITION | Grains **RK5** as position control. | Off | 0 = **RK5** mirrors **LK5** speed control; 1 =  **RK5** as position control (**LK5** remains speed).|
 | **K6** | GRAINS SYNC | Sync grain spawning to incoming clock at the FSU CV input. | Off | 0 = free-running; 1 = spawn at metrical divisions in **K3** sparse region.|
 
 All parameters except **K1** are binary switches: CCW is 0 (default); CW is 1.
