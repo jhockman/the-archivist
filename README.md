@@ -52,8 +52,14 @@ SW0 = Switch 0 (top); SW1 = Switch 1 (bottom).
 Parameter values are stored upon toggling **SW0** control pages and recalled on passthrough. *NB: starting the module with* **SW0=R** *will snapshot knob positions which are held on change to* **SW0=L**.
 
 ### INPUTS AND OUTPUTS
+| IN/OUT | DESCRIPTION |
+|---|---|
+| **L-IN** | Mono input.|
+| **R-IN** | Trigger or gate to automate capture.|
+| **L/R-OUT** | Stereo output; spread controlled through **SETTINGS K1**.|
 
-**L-INPUT** is mono audio input; **R-INPUT** takes trigger or gate to automate capture. While captured, monitor follows L-input so disengaging capture and re-enabling captures input (not module output). Module outputs through stereo pair with stereo spread controlled through **SETTINGS K1**.
+While captured, monitor follows L-input so disengaging capture and re-enabling captures input (not module output).
+
 ### FSU BUTTON
 
 | GESTURE | DESCRIPTION |
