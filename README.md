@@ -268,7 +268,7 @@ Adjusting any knob overtakes the firmware indicator, and LEDs indicate the follo
 | KNOB | SETTING | DESCRIPTION | DEFAULT | RANGE |
 |---|---|---|---|---|
 | **K0** | GLOBAL RETENTION MODE | Global **K2** Retention control in both modes. | Continuous | 0 = Continuous (smooth transition between strata); 1 = Discrete.|
-| **K1** | GLOBAL STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modification expands to stereo. | 0.5 (mono) | 0. = mono; 1. = hard L/R.|
+| **K1** | GLOBAL STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modulation (**L/RK6**) expands to stereo. | 0.5 (mid-spread) | 0. = mono; 1. = hard L/R.|
 | **K2** | TAPE DISINTEGRATION | Whether earned wear travels over time or holds where the dial sets it. | On | 0 = On; 1 = Off.|
 | **K3** | TAPE SCAN REFERENCE | Speed target of advance. | K0 | 0 = K0; 1 = 1x (unity).|
 | **K4** | TAPE RHYTHM | Rhythm derived by tape splicing at highest stratum is inherited by others. | Bar | 0 = Bar; 1 = Memory (rhythm is mapped to context at lower strata).|
