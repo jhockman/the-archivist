@@ -1,3 +1,4 @@
+<img width="1070" height="2630" alt="versio-controls" src="https://github.com/user-attachments/assets/f9fa7359-2562-42e3-8d5e-aa6c0d0ae253" />
 # The Archivist
 
 <p align="left">
@@ -43,7 +44,9 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 
 ## OPERATION
 
-<img width="250" alt="panel" src="https://github.com/user-attachments/assets/711656b7-8555-469f-b971-d5489867985a" />
+<img width="250" alt="versio-controls" src="https://github.com/user-attachments/assets/ec4cb553-d0cb-44cf-8c06-5847eeaa2890" />
+
+
 
 *Figure 2:* Panel layout with abbreviations used below (e.g., **K0–6**: knobs, **SW0–1**: switches).
 
