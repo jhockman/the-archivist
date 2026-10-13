@@ -45,7 +45,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 
 <img width="250" alt="panel" src="https://github.com/user-attachments/assets/711656b7-8555-469f-b971-d5489867985a" />
 
-*Figure 2:* Panel layout with control abbreviations used below (e.g., **K0–6**: knobs, **SW0–1**: switches).
+*Figure 2:* Panel layout with abbreviations used below (e.g., **K0–6**: knobs, **SW0–1**: switches).
 
 ### SWITCHES
 SW0 = Switch 0 (top); SW1 = Switch 1 (bottom).
