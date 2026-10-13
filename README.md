@@ -14,10 +14,12 @@ As an agent of retention and recollection, **The Archivist** is a compact perfor
 Each mode has a specialised sampling engine constructed from tuned misuse of various technologies from its era, resulting in unique aesthetic colouration across memory recall. **TAPE** recreates analogue properties of reel-to-reel and cassette media, with the afforded manipulations—emulating various recording (EQ, saturation, noise), playback (wow/flutter, head tracking errors), splicing (looping) and effects processing (tape echo, pitch modulation); **GRAINS** is inspired by 1980s/1990s digital codecs for decimation, bit reduction, and efficient storage (DPCM with residual *μ*-law companding and slope overload), with parameterisation over a granular engine and storage qualities. Both modes encourage a departure from the present by navigating retention strata to excavate old memories, which find expression through degradation that antiquated mediums impart. 
 
 ---
+## MANUAL
 
-## CONTENTS
+*Video manual to follow; hardware panel imminent...*
 
 * [Install](#install)
+* [Overview](#overview)
 * [Operation](#operation)
 * [Modes](#modes): [Tape](#mode-1-tape-sw1lc) // [Grains](#mode-2-grains-sw1r)
 * [Retention and Strata](#retention-and-strata)
@@ -26,10 +28,6 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 * [Licence](#licence)
 
 ---
-
-## MANUAL
-
-*Video manual to follow; hardware panel imminent...*
 
 ## INSTALL
 
@@ -41,13 +39,13 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 
 <img width="700" alt="fig1-readme" src="https://github.com/user-attachments/assets/a31fef4d-27c6-46f9-8136-29181d22e836" />
 
-*Figure:* The Archivist TAPE and GRAINS modes of operation and retention strata. Highlighted stages depict dependence on chosen strata. 
+*Figure 1:* The Archivist TAPE and GRAINS modes of operation and retention strata. Highlighted stages depict dependence on chosen strata. 
 
 ## OPERATION
 
 <img width="250" alt="panel" src="https://github.com/user-attachments/assets/711656b7-8555-469f-b971-d5489867985a" />
 
-*Figure:* Panel layout with control abbreviations used below (e.g., **K0–6**: knobs, **SW0–1**: switches).
+*Figure 2:* Panel layout with control abbreviations used below (e.g., **K0–6**: knobs, **SW0–1**: switches).
 
 ### SWITCHES
 SW0 = Switch 0 (top); SW1 = Switch 1 (bottom).
@@ -91,7 +89,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 <img src="https://github.com/user-attachments/assets/89b91d4d-5a92-48a9-b947-af8f8b8c842b" width="700">
 </p>
 
-*Figure:* Eltro Mark II Information Rate Changer (circa 1960) tape machine. See [Eltro decription by Wendy Carlos for more information](https://www.wendycarlos.com/other/Eltro-1967/).
+*Figure 3:* Eltro Mark II Information Rate Changer (circa 1960) tape machine. See [Eltro decription by Wendy Carlos for more information](https://www.wendycarlos.com/other/Eltro-1967/).
 
 #### Main Controls (SW0=L/C)
 
@@ -134,7 +132,7 @@ Numbered **0** to **3**, left to right.
 <img src="https://github.com/user-attachments/assets/4c8648b5-247e-4b5d-97b9-dd3d2ba2a4b4" width="700">
 </p>
 
-*Figure:* The E-mu Emulator II (1985).
+*Figure 4:* The E-mu Emulator II (1985).
 
 #### Main Controls (SW0=L/C)
 
