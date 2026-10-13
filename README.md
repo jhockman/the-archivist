@@ -1,4 +1,3 @@
-<img width="1070" height="2630" alt="versio-controls" src="https://github.com/user-attachments/assets/f9fa7359-2562-42e3-8d5e-aa6c0d0ae253" />
 # The Archivist
 
 <p align="left">
