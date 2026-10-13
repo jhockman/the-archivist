@@ -39,6 +39,10 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 
 ## OPERATION
 
+<img width="700" alt="archivist_overview" src="https://github.com/user-attachments/assets/1945fc28-e554-4511-9f89-7e9952feda4e" />
+
+*Figure:* The Archivist TAPE and GRAINS modes of operation and retention strata.
+
 ### SWITCHES
 SW0 = Switch 0 (top); SW1 = Switch 1 (bottom).
 
