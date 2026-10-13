@@ -37,12 +37,17 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 2. Put Versio into DFU mode (see the NE Versio firmware wizard for instructions).
 3. Load the `.bin` using either the NE Versio firmware wizard on the [NE Versio page](https://noiseengineering.us/pages/world-of-versio/) or the [Electrosmith Daisy Bootloader page](https://flash.daisy.audio/).
 
-## OPERATION
+## OVERVIEW
 
 <img width="700" alt="fig1-readme" src="https://github.com/user-attachments/assets/a31fef4d-27c6-46f9-8136-29181d22e836" />
 
-
 *Figure:* The Archivist TAPE and GRAINS modes of operation and retention strata. Highlighted stages depict dependence on chosen strata. 
+
+## OPERATION
+
+<img width="250" alt="panel" src="https://github.com/user-attachments/assets/711656b7-8555-469f-b971-d5489867985a" />
+
+*Figure:* Panel layout with control abbreviations used below (e.g., **K0–6**: knobs, **SW0–1**: switches).
 
 ### SWITCHES
 SW0 = Switch 0 (top); SW1 = Switch 1 (bottom).
