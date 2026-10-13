@@ -39,7 +39,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 
 <img width="700" alt="fig1-readme" src="https://github.com/user-attachments/assets/a31fef4d-27c6-46f9-8136-29181d22e836" />
 
-*Figure 1:* The Archivist TAPE and GRAINS modes of operation and retention strata. Highlighted stages depict dependence on chosen strata. 
+*Figure 1:* **TAPE** and **GRAINS** operation modes and retention strata. Highlighted stages depict dependence on chosen strata. 
 
 ## OPERATION
 
