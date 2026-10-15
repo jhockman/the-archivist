@@ -90,7 +90,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 <img src="https://github.com/user-attachments/assets/89b91d4d-5a92-48a9-b947-af8f8b8c842b" width="700">
 </p>
 
-*Figure 3:* Eltro Mark II Information Rate Changer (circa 1960) tape machine. See [Eltro decription by Wendy Carlos for more information](https://www.wendycarlos.com/other/Eltro-1967/).
+*Figure 3:* Eltro Mark II Information Rate Changer (circa 1960) tape machine. See [Eltro description by Wendy Carlos for more information](https://www.wendycarlos.com/other/Eltro-1967/).
 
 #### Main Controls (SW0=L/C)
 
@@ -143,7 +143,7 @@ Numbered **0** to **3**, left to right.
 | **K1** | WINDOW | Grain envelope shape. | Centre=a plateau of pure Hann. CCW morphs to an exponential decay; CW morphs to its reverse, a swell.|
 | **K2** | RETENTION | Capture decimation and metrical duration (see [Retention and Strata](#retention-and-strata) below). | Discrete or continuous, per **SETTINGS K0**.|
 | **K3** | DENSITY | Grain overlap (see below). | Centre=maximum overlap; full CCW=minimum isochronous; full CW=minimum random.|
-| **K4** | LENGTH | Grain length. | full CCW=50ms,full CW=500s |
+| **K4** | LENGTH | Grain length. | full CCW=50ms,full CW=500ms |
 | **K5** | SPEED | Speed and direction of playback. | Continuous; centre=0x, full CCW=−2x, full CW=+2x (detents at ±0.5x, ±1x and ±2x).|
 | **K6** | SPRAY | Gaussian scatter of grain read positions. | CCW=none (grains follow read head), CW=random position.|
 
@@ -321,13 +321,13 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 ---
 
-## DISCLAIMER
+<!--## DISCLAIMER
 
 Inspiration was drawn from the instruments (specs, user and service manuals) listed above; however, a sufficient use of artistic license has been applied throughout an iterative development process, resulting in the amalgam of is this firmware.
 
 This is an ongoing project, please look out for updates. Provided "as is", without warranty of any kind.
 
-*Use at your own risk, but have fun.*
+*Use at your own risk, but have fun.* -->
 
 ## LICENCE
 
