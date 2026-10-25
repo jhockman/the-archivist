@@ -79,6 +79,8 @@ While captured, monitor follows L-input so disengaging capture and re-enabling c
 
 **FSU Button** operation is equivalent in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
 
+*NB*: While the device is continually recording, a capture always takes the stratum’s full length back from the moment you hit the FSU button. If a capture is made before the played material can fill the durations of the longer strata, then it will result in silence (or earlier material) in these strata. After power on or memory clear, captures are shortened to what has been recorded since.
+
 ### KNOBS
 Knob parameterisation differs per mode and pages. Please see knob layout descriptions in the relevant sections. 
 
