@@ -20,7 +20,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 * [Install](#install)
 * [Overview](#overview)
 * [Operation](#operation)
-* [Modes](#modes): [TAPE](#mode-1-tape-sw1lc) // [GRAINS](#mode-2-grains-sw1r)
+* [Modes](#modes): [TAPE](#mode-1-tape-sw2lc) // [GRAINS](#mode-2-grains-sw2r)
 * [Retention and Strata](#retention-and-strata)
 * [Settings](#settings)
 * [Examples](#examples)
@@ -46,26 +46,26 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 
 
 
-*Figure 2:* Panel layout with abbreviations used below (e.g., **K0–6**: knobs, **SW0–1**: switches).
+*Figure 2:* Panel layout with abbreviations used below (e.g., **K1–7**: knobs, **SW1–2**: switches).
 
 ### SWITCHES
-SW0 = Switch 0 (top); SW1 = Switch 1 (bottom).
+SW1 = Switch 1 (top); SW2 = Switch 2 (bottom).
 
 | SWITCH | SETTING | MODE/CTRL | DESCRIPTION |
 |---|---|---|---|
-| **SW1** | L/C | TAPE | Tape engine.|
-| **SW1** | R | GRAINS | Granular engine.|
-| **SW0** | L/C | Main controls | Main controls for either mode.|
-| **SW0** | R | Alt controls | Alternative controls for either mode.|
+| **SW2** | L/C | TAPE | Tape engine.|
+| **SW2** | R | GRAINS | Granular engine.|
+| **SW1** | L/C | Main controls | Main controls for either mode.|
+| **SW1** | R | Alt controls | Alternative controls for either mode.|
 
-Parameter values are stored upon toggling **SW0** control pages and recalled on passthrough. *NB: starting the module with* **SW0=R** *will snapshot knob positions which are held on change to* **SW0=L**.
+Parameter values are stored upon toggling **SW1** control pages and recalled on passthrough. *NB: starting the module with* **SW1=R** *will snapshot knob positions which are held on change to* **SW1=L**.
 
 ### INPUTS AND OUTPUTS
 | IN/OUT | DESCRIPTION |
 |---|---|
 | **L-IN** | Mono input.|
 | **R-IN** | Trigger or gate to automate capture.|
-| **L/R-OUT** | Stereo output; spread controlled through **SETTINGS K1**.|
+| **L/R-OUT** | Stereo output; spread controlled through **SETTINGS K2**.|
 
 While captured, monitor follows L-input so disengaging capture and re-enabling captures input (not module output).
 
@@ -74,8 +74,8 @@ While captured, monitor follows L-input so disengaging capture and re-enabling c
 | GESTURE | DESCRIPTION |
 |---|---|
 | **Tap** | Capture. |
-| **Hold 3sec in SW0=C** | Enter/exit **SETTINGS** page.|
-| **Hold 3sec in SW0=L or R** | Clears retention in **TAPE** or **GRAINS**.|
+| **Hold 3sec in SW1=C** | Enter/exit **SETTINGS** page.|
+| **Hold 3sec in SW1=L or R** | Clears retention in **TAPE** or **GRAINS**.|
 
 **FSU Button** operation is equivalent in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
 
@@ -86,7 +86,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 
 ## MODES
 
-### MODE 1: TAPE (SW1=L/C)
+### MODE 1: TAPE (SW2=L/C)
 
 <p align="left">
 <img src="https://github.com/user-attachments/assets/89b91d4d-5a92-48a9-b947-af8f8b8c842b" width="700">
@@ -94,42 +94,42 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 
 *Figure 3:* Eltro Mark II Information Rate Changer (circa 1960) tape machine. See [Eltro description by Wendy Carlos for more information](https://www.wendycarlos.com/other/Eltro-1967/).
 
-#### Main Controls (SW0=L/C)
+#### Main Controls (SW1=L/C)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
-| **K0** | PITCH | Pitch. | Full CCW=−24 semitones (0v), unison at 0.4 (2v), full CW=+12 semitones (3v). Refer to [K0 Zones](#k0-zones) below) for regions above 3v.|
-| **K1** | DRIVE | Record drive into the tape. | CCW=clean, CW=hot.|
-| **K2** | RETENTION | Decimation, metrical duration and cassette type. See [Retention and Strata](#retention-and-strata). | Discrete or continuous, per **SETTINGS K0**.|
-| **K3** | ECHO | Tape echo (print-through) over the K4 loop duration. | CCW=off, CW=full effect.|
-| **K4** | LENGTH | Tape loop duration. | CCW=short, CW=long.|
-| **K5** | SPEED | Speed and direction of playback. | 
-| **K6** | K-FIELD DEPTH | Modulation depth. | CCW=off, CW=full effect.|
+| **K1** | PITCH | Pitch. | Full CCW=−24 semitones (0v), unison at 0.4 (2v), full CW=+12 semitones (3v). Refer to [K1 Zones](#k1-zones) below) for regions above 3v.|
+| **K2** | DRIVE | Record drive into the tape. | CCW=clean, CW=hot.|
+| **K3** | RETENTION | Decimation, metrical duration and cassette type. See [Retention and Strata](#retention-and-strata). | Discrete or continuous, per **SETTINGS K1**.|
+| **K4** | ECHO | Tape echo (print-through) over the K5 loop duration. | CCW=off, CW=full effect.|
+| **K5** | LENGTH | Tape loop duration. | CCW=short, CW=long.|
+| **K6** | SPEED | Speed and direction of playback. | 
+| **K7** | K-FIELD DEPTH | Modulation depth. | CCW=off, CW=full effect.|
 
-#### Alt Controls (SW0=R)
+#### Alt Controls (SW1=R)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
-| **K3** | WEAR | Wow/flutter and magnetic distortion; disintegration enabled with **SETTINGS K2** = 0. | CCW=no wear; CW=broken medium.|
-| **K4** | SPLICE ANGLE | Tape splice angle. | CCW=20ms; CW=500ms.|
-| **K5** | HEAD SPLICING | drum head splices to tape loop length. | 1, 2, 4, 8, 16, 32. Centre=8.|
-| **K6** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
+| **K4** | WEAR | Wow/flutter and magnetic distortion; disintegration enabled with **SETTINGS K3** = 0. | CCW=no wear; CW=broken medium.|
+| **K5** | SPLICE ANGLE | Tape splice angle. | CCW=20ms; CW=500ms.|
+| **K6** | HEAD SPLICING | drum head splices to tape loop length. | 1, 2, 4, 8, 16, 32. Centre=8.|
+| **K7** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
 
 
 #### TAPE LEDs
 
-Numbered **0** to **3**, left to right.
+Numbered **1** to **4**, left to right.
 
 | LED | DESCRIPTION |
 |---|---|
-| **LED0** | Retention. 8 colours representing strata (as below); continuous blends between colours.|
-| **LED1** | Pitch. 🟢 Unison=Green; ⚪ Octaves=White; 🟠 +5th=Orange; 🔵 −5th=Dark blue; Otherwise dims toward unison.|
-| **LED2** | Speed and direction; slice count on SW0=R.|
-| **LED3** | Capture. 🔵 Blue when engaged.|
+| **LED1** | Retention. 8 colours representing strata (as below); continuous blends between colours.|
+| **LED2** | Pitch. 🟢 Unison=Green; ⚪ Octaves=White; 🟠 +5th=Orange; 🔵 −5th=Dark blue; Otherwise dims toward unison.|
+| **LED3** | Speed and direction; slice count on SW1=R.|
+| **LED4** | Capture. 🔵 Blue when engaged.|
 
 ---
 
-### MODE 2: GRAINS (SW1=R)
+### MODE 2: GRAINS (SW2=R)
 
 <p align="left">
 <img src="https://github.com/user-attachments/assets/4c8648b5-247e-4b5d-97b9-dd3d2ba2a4b4" width="700">
@@ -137,70 +137,70 @@ Numbered **0** to **3**, left to right.
 
 *Figure 4:* The E-mu Emulator II (1985).
 
-#### Main Controls (SW0=L/C)
+#### Main Controls (SW1=L/C)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
-| **K0** | PITCH | Grain pitch (see below). | Full CCW=−24 semitones (0v), unison at 0.4 (2v), full CW=+12 semitones (3v). Refer to [K0 Zones](#k0-zones) below) for regions above 3v.|
-| **K1** | WINDOW | Grain envelope shape. | Centre=a plateau of pure Hann. CCW morphs to an exponential decay; CW morphs to its reverse, a swell.|
-| **K2** | RETENTION | Capture decimation and metrical duration (see [Retention and Strata](#retention-and-strata) below). | Discrete or continuous, per **SETTINGS K0**.|
-| **K3** | DENSITY | Grain overlap (see below). | Centre=maximum overlap; full CCW=minimum isochronous; full CW=minimum random.|
-| **K4** | LENGTH | Grain length. | full CCW=50ms,full CW=500ms |
-| **K5** | SPEED | Speed and direction of playback. | Continuous; centre=0x, full CCW=−2x, full CW=+2x (detents at ±0.5x, ±1x and ±2x).|
-| **K6** | SPRAY | Gaussian scatter of grain read positions. | CCW=none (grains follow read head), CW=random position.|
+| **K1** | PITCH | Grain pitch (see below). | Full CCW=−24 semitones (0v), unison at 0.4 (2v), full CW=+12 semitones (3v). Refer to [K1 Zones](#k1-zones) below) for regions above 3v.|
+| **K2** | WINDOW | Grain envelope shape. | Centre=a plateau of pure Hann. CCW morphs to an exponential decay; CW morphs to its reverse, a swell.|
+| **K3** | RETENTION | Capture decimation and metrical duration (see [Retention and Strata](#retention-and-strata) below). | Discrete or continuous, per **SETTINGS K1**.|
+| **K4** | DENSITY | Grain overlap (see below). | Centre=maximum overlap; full CCW=minimum isochronous; full CW=minimum random.|
+| **K5** | LENGTH | Grain length. | full CCW=50ms,full CW=500ms |
+| **K6** | SPEED | Speed and direction of playback. | Continuous; centre=0x, full CCW=−2x, full CW=+2x (detents at ±0.5x, ±1x and ±2x).|
+| **K7** | SPRAY | Gaussian scatter of grain read positions. | CCW=none (grains follow read head), CW=random position.|
 
-#### Alt Controls (SW0=R)
+#### Alt Controls (SW1=R)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
-| **K0** | DETUNE | Per-grain pitch deviation. | Centre=off. CCW=continuous spread up to ±12 semitones; CW=discrete interval sets.|
-| **K1** | REVERSE | Proportion of grains played backwards. | CCW=all forward, CW=all reverse.|
-| **K3** | SWING / HUMANISE | Grain timing. | CCW of centre=swing; CW of centre=random lateness.|
-| **K4** | DISSOLVE | Read point smoothing on write head overtake. | CCW=immediate; CW=full smoothing.|
-| **K6** | SPACE | Schroeder allpass diffusion with tank reverb. | CCW to centre=dry to full diffusion; centre to CW=diffusion held full, tank decay 1-9 s.|
+| **K1** | DETUNE | Per-grain pitch deviation. | Centre=off. CCW=continuous spread up to ±12 semitones; CW=discrete interval sets.|
+| **K2** | REVERSE | Proportion of grains played backwards. | CCW=all forward, CW=all reverse.|
+| **K4** | SWING / HUMANISE | Grain timing. | CCW of centre=swing; CW of centre=random lateness.|
+| **K5** | DISSOLVE | Read point smoothing on write head overtake. | CCW=immediate; CW=full smoothing.|
+| **K7** | SPACE | Schroeder allpass diffusion with tank reverb. | CCW to centre=dry to full diffusion; centre to CW=diffusion held full, tank decay 1-9 s.|
 
-#### **K3**: DENSITY 
+#### **K4**: DENSITY 
 * Sets the number and distribution of overlapping grains.
-* Maximum density is generated at the centre position. At **K0**=unison, **K5**=1x, and **K6**=0, maximum density is 5, and is increased automatically for cloud coverage, presence of pitch intervals, and **K6**>0.
-* Turning either way decreases the number of grains continuously. LED2 blinks slowly at centre (maximum density).
+* Maximum density is generated at the centre position. At **K1**=unison, **K6**=1x, and **K7**=0, maximum density is 5, and is increased automatically for cloud coverage, presence of pitch intervals, and **K7**>0.
+* Turning either way decreases the number of grains continuously. LED3 blinks slowly at centre (maximum density).
 * Anticlockwise settings generate grains at even amplitude and synchronous spacing.
 * Clockwise settings generate grains at random amplitudes and asynchronous spacing.
-* LED2 blinks at double rate where grains no longer overlap sufficiently to sum smoothly. This point varies with pitch and speed settings.
+* LED3 blinks at double rate where grains no longer overlap sufficiently to sum smoothly. This point varies with pitch and speed settings.
 * At either extreme setting, one grain is generated per four grain lengths.
-* With trigger or clock signal in **FSU CV INPUT**, **K3** at min or max triggers grains (min = isochronous, max = random).
+* With trigger or clock signal in **FSU CV INPUT**, **K4** at min or max triggers grains (min = isochronous, max = random).
 
-#### **K6**: SPRAY 
+#### **K7**: SPRAY 
 * Sets deviation of grain read positions from the read head.
 * The point at which additional density becomes available varies with grain length, pitch and speed.
 
 #### GRAINS LEDs
 
-Numbered **0** to **3**, left to right.
+Numbered **1** to **4**, left to right.
 
 | LED | DESCRIPTION |
 |---|---|
-| **LED0** | Retention. 8 colours representing strata (as below); continuous blends between colours.|
-| **LED1** | Pitch. 🟢 Unison=Green; ⚪ Octaves=White; 🟠 +5th=Orange; 🔵 −5th=Dark blue; Otherwise dims toward unison.|
-| **LED2** | Speed and direction, plus density flashing (see above).|
-| **LED3** | Capture. 🔵 Blue when engaged.|
+| **LED1** | Retention. 8 colours representing strata (as below); continuous blends between colours.|
+| **LED2** | Pitch. 🟢 Unison=Green; ⚪ Octaves=White; 🟠 +5th=Orange; 🔵 −5th=Dark blue; Otherwise dims toward unison.|
+| **LED3** | Speed and direction, plus density flashing (see above).|
+| **LED4** | Capture. 🔵 Blue when engaged.|
 
-**LED2** (with **SETTINGS K5**=Speed):
+**LED3** (with **SETTINGS K6**=Speed):
 
 * 🔴 **0x**: Flashing red.
 * 🟢 **±1x**: Green.
 * ⚪ **±0.5x and ±2x**: White.
 * 🔵 🟠 **Otherwise**: Blue forwards, orange reverse.
-* **K3** coverage landmarks (see above).
+* **K4** coverage landmarks (see above).
 
-With **SETTINGS K5**=Position, LED2 instead displays a brightness ramp: off at full CCW, brightening through blue to white at full CW. There are no K3 blinks in position mode.
+With **SETTINGS K6**=Position, LED3 instead displays a brightness ramp: off at full CCW, brightening through blue to white at full CW. There are no K4 blinks in position mode.
 
 ---
 
-## K0 ZONES
+## K1 ZONES
 
-**K0** is 1v/oct. Above the pitch control (0-3v) it enters further zones, at the same voltages in both modes. Entering a zone restarts.
+**K1** is 1v/oct. Above the pitch control (0-3v) it enters further zones, at the same voltages in both modes. Entering a zone restarts.
 
-| K0 | GRAINS | TAPE |
+| K1 | GRAINS | TAPE |
 |---|---|---|
 | **0–3v** | PITCH | −24 to +12 semitones.|
 | **3–4v** | SHEPARD | Shepard tones [-12,+24] semitones. See [SHEPARD](#shepard) below.|
@@ -213,10 +213,10 @@ With **SETTINGS K5**=Position, LED2 instead displays a brightness ramp: off at f
 ### SHEPARD
 
 * 3 octave layers sound together, gliding endlessly without leaving the register.
-* **K5** sets glide speed and direction; at 0x it holds.
-* **LK0** between 3–4v sets focus: CCW = low, CW = adds additional brighter layers.
-* **RK0** pitch intervals are bypassed.
-* **LED1** ramps 🔵 blue to 🔴 red across each octave.
+* **K6** sets glide speed and direction; at 0x it holds.
+* **LK1** between 3–4v sets focus: CCW = low, CW = adds additional brighter layers.
+* **RK1** pitch intervals are bypassed.
+* **LED2** ramps 🔵 blue to 🔴 red across each octave.
 
 ---
 
@@ -228,7 +228,7 @@ With **SETTINGS K5**=Position, LED2 instead displays a brightness ramp: off at f
 * Patterns vary on repetition and revert; leaving and re-entering restores original.
 * Ornaments (e.g., slides, bends, reversed steps).
 * Clock signal at **FSU CV INPUT** syncs sequence; unclocked one step unit = 250 ms.
-* **LED1** indicates sequence zone as ⚪ grey; notes indicated with dark led.
+* **LED2** indicates sequence zone as ⚪ grey; notes indicated with dark led.
 
 ---
 
@@ -236,10 +236,10 @@ With **SETTINGS K5**=Position, LED2 instead displays a brightness ramp: off at f
 
 | CONTROL | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
-| **K2** | RETENTION | Selects stratum with increasing decimation and context. | Continuous or discrete, per **SETTINGS K0**. Discrete = 8 strata from full CW (48 kHz, 1 bar) to full CCW (3 kHz, 12 bars).|
+| **K3** | RETENTION | Selects stratum with increasing decimation and context. | Continuous or discrete, per **SETTINGS K1**. Discrete = 8 strata from full CW (48 kHz, 1 bar) to full CCW (3 kHz, 12 bars).|
 | **FSU CV INPUT** | SYNC | Clock source for capture and grain triggers. | Unsynced defaults to 120 BPM.|
 
-| | RATE | CONTEXT | LED0 |
+| | RATE | CONTEXT | LED1 |
 |---|---|---|---|
 | **Full CW** | 48 kHz | 1 bar | <img src="https://placehold.co/12x12/FF0000/FF0000.png"> red |
 | | 24 kHz | 2 bars | <img src="https://placehold.co/12x12/00D9FF/00D9FF.png"> cyan |
@@ -256,7 +256,7 @@ Coarser strata reach further back in time, so at a given speed the same phrase g
 
 ## SETTINGS
 
-Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW0=C**, or **FSU** held at boot.
+Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW1=C**, or **FSU** held at boot.
 
 *NB*: Avoid CV input modulation while entering, using or exiting.
 
@@ -264,36 +264,36 @@ Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW0
 
 #### FIRMWARE VERSION ####
 
-On entry to **SETTINGS**, LEDs indicates the firmware version. v1 displays: **LED0** = 🔴 dim red with **LED1–3** off. Subsequent versions will be listed here with a change log when available.
+On entry to **SETTINGS**, LEDs indicates the firmware version. v1 displays: **LED1** = 🔴 dim red with **LED2–4** off. Subsequent versions will be listed here with a change log when available.
 
 Adjusting any knob overtakes the firmware indicator, and LEDs indicate the following:
 
 | LED | DESCRIPTION |
 |---|---|
-| **LED0** | Brightness ramps during the FSU commit hold (3 sec).|
-| **LED1** | Default value of the chosen parameter.|
-| **LED2** | Stored user value of the chosen parameter.|
-| **LED3** | Live knob position. Flashes when the knob value matches the stored user value.|
+| **LED1** | Brightness ramps during the FSU commit hold (3 sec).|
+| **LED2** | Default value of the chosen parameter.|
+| **LED3** | Stored user value of the chosen parameter.|
+| **LED4** | Live knob position. Flashes when the knob value matches the stored user value.|
 
 | KNOB | SETTING | DESCRIPTION | DEFAULT | RANGE |
 |---|---|---|---|---|
-| **K0** | GLOBAL RETENTION MODE | Global **K2** Retention control in both modes. | Continuous | 0 = Continuous (smooth transition between strata); 1 = Discrete.|
-| **K1** | GLOBAL STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modulation (**L/RK6**) expands to stereo. | 0.5 (mid-spread) | 0. = mono; 1. = hard L/R.|
-| **K2** | TAPE DISINTEGRATION | Whether earned wear travels over time or holds where the dial sets it. | On | 0 = On; 1 = Off.|
-| **K3** | TAPE SCAN REFERENCE | Speed target of advance. | K0 | 0 = K0; 1 = 1x (unity).|
-| **K4** | TAPE RHYTHM | Rhythm derived by tape splicing at highest stratum is inherited by others. | Fixed | 0 = Fixed; 1 = Scaled (rhythm is stretched to duration of lower strata).|
-| **K5** | GRAINS POSITION | Grains **RK5** as position control. | Off | 0 = **RK5** mirrors **LK5** speed control; 1 =  **RK5** as position control (**LK5** remains speed).|
-| **K6** | GRAINS SYNC | Sync grain spawning to incoming clock at the FSU CV input. | Off | 0 = free-running; 1 = spawn at metrical divisions in **K3** sparse region.|
+| **K1** | GLOBAL RETENTION MODE | Global **K3** Retention control in both modes. | Continuous | 0 = Continuous (smooth transition between strata); 1 = Discrete.|
+| **K2** | GLOBAL STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modulation (**L/RK7**) expands to stereo. | 0.5 (mid-spread) | 0. = mono; 1. = hard L/R.|
+| **K3** | TAPE DISINTEGRATION | Whether earned wear travels over time or holds where the dial sets it. | On | 0 = On; 1 = Off.|
+| **K4** | TAPE SCAN REFERENCE | Speed target of advance. | K1 | 0 = K1; 1 = 1x (unity).|
+| **K5** | TAPE RHYTHM | Rhythm derived by tape splicing at highest stratum is inherited by others. | Fixed | 0 = Fixed; 1 = Scaled (rhythm is stretched to duration of lower strata).|
+| **K6** | GRAINS POSITION | Grains **RK6** as position control. | Off | 0 = **RK6** mirrors **LK6** speed control; 1 =  **RK6** as position control (**LK6** remains speed).|
+| **K7** | GRAINS SYNC | Sync grain spawning to incoming clock at the FSU CV input. | Off | 0 = free-running; 1 = spawn at metrical divisions in **K4** sparse region.|
 
-All parameters except **K1** are binary switches: CCW is 0 (default); CW is 1.
+All parameters except **K2** are binary switches: CCW is 0 (default); CW is 1.
 
-Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and reflash. On exit, **SW0** position determines save.
+Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and reflash. On exit, **SW1** position determines save.
 
-| SW0 POSITION | SETTING | DESCRIPTION|
+| SW1 POSITION | SETTING | DESCRIPTION|
 |---|---|---|
-| **SW0=L** | NEW USER | Save edits; new user settings are saved and used on restart.|
-| **SW0=C** | OLD USER | Cancel; discard changes and reuse saved user settings on restart.|
-| **SW0=R** | DEFAULT | Reset to defaults; discard changes and use module defaults on restart.|
+| **SW1=L** | NEW USER | Save edits; new user settings are saved and used on restart.|
+| **SW1=C** | OLD USER | Cancel; discard changes and reuse saved user settings on restart.|
+| **SW1=R** | DEFAULT | Reset to defaults; discard changes and use module defaults on restart.|
 
 ---
 
@@ -303,23 +303,23 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 #### RECONSTRUCTION
 
-* Set **SW0=L/K0** = unison (**LED1**=green, 0.4), **SW0=R/K0** = centre, **K5** = 1x (0.8), **K6** = full CCW, **SW0=R/K1** = 0. (no reverse). **LED1** is green at unison.
+* Set **SW1=L/K1** = unison (**LED2**=green, 0.4), **SW1=R/K1** = centre, **K6** = 1x (0.8), **K7** = full CCW, **SW1=R/K2** = 0. (no reverse). **LED2** is green at unison.
 
 #### PITCH SHIFTING
 
-* Follow above instructions for reconstruction, and modify **K0** to desired pitch. Slight adjustments to other parameters may yield improved results.
+* Follow above instructions for reconstruction, and modify **K1** to desired pitch. Slight adjustments to other parameters may yield improved results.
 
 #### TIME SCALING
 
-* Similarly, follow above instructions for reconstruction, and modify **K5** to desired speed. Adjustments to other parameters (notably **K4** and **K6**) will result in improved coverage at **K5** nearer to 0x.
-* With **SETTINGS** **K5** = 1 and **LK5** (speed) at 0x (0.5), **RK5** may be used to control position in the buffer without advancing speed.
-* *NB: Due to the laws of reality, while uncaptured, if you play back audio at **K5**<1x the output reflects material at an increasingly greater delay from the input. Playing back >1x reuses audio in the buffer. Don't be angry about this, we can't control time yet.*
+* Similarly, follow above instructions for reconstruction, and modify **K6** to desired speed. Adjustments to other parameters (notably **K5** and **K7**) will result in improved coverage at **K6** nearer to 0x.
+* With **SETTINGS** **K6** = 1 and **LK6** (speed) at 0x (0.5), **RK6** may be used to control position in the buffer without advancing speed.
+* *NB: Due to the laws of reality, while uncaptured, if you play back audio at **K6**<1x the output reflects material at an increasingly greater delay from the input. Playing back >1x reuses audio in the buffer. Don't be angry about this, we can't control time yet.*
 
 ### TAPE
 
 #### DISINTEGRATION
 
-* With default setting for disintegration (**K2**=0) and **SW0=R K3** > 0, captured audio is continually degraded through emulated medium destruction (e.g., wow/flutter, magnetic distortion). Higher **SW0=R K3** settings result in worse starting degradation and faster disintegration rates (from 5–15 minutes). 
+* With default setting for disintegration (**K3**=0) and **SW1=R K4** > 0, captured audio is continually degraded through emulated medium destruction (e.g., wow/flutter, magnetic distortion). Higher **SW1=R K4** settings result in worse starting degradation and faster disintegration rates (from 5–15 minutes). 
 
 ---
 
@@ -340,5 +340,3 @@ The firmware binary is free to download and use on Noise Engineering Versio hard
 Full terms in [LICENSE](LICENSE).
 
 Built with libDaisy (MIT) by Electrosmith Corp.
-
-
