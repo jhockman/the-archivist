@@ -42,9 +42,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 
 ## OPERATION
 
-<img width="250" alt="versio-controls" src="https://github.com/user-attachments/assets/ec4cb553-d0cb-44cf-8c06-5847eeaa2890" />
-
-
+<img width="250" alt="versio-controls-1indexed" src="https://github.com/user-attachments/assets/1378ab6c-2909-412b-ab18-8e3bc8c66897" />
 
 *Figure 2:* Panel layout with abbreviations used below (e.g., **K1–7**: knobs, **SW1–2**: switches).
 
