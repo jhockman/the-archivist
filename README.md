@@ -10,7 +10,7 @@ A [Detuned Transmissions (DTND)](https://detunedtransmissions.com/) firmware for
 
 As an agent of retention and recollection, **The Archivist** is a compact performance processor for capturing and manipulating sound in 10hp. It offers two modes of sonic manipulation from distinct eras: **TAPE** emulates early tape splicing procedures, while **GRAINS** affords modern microsound exploration.
 
-Each mode has a specialised sampling engine constructed from tuned misuse of various technologies from its era, resulting in unique aesthetic colouration across memory recall. **TAPE** recreates analogue properties of reel-to-reel and cassette media, with the afforded manipulations—emulating various recording (EQ, saturation, noise), playback (wow/flutter, head tracking errors), splicing (looping) and effects processing (tape echo, pitch modulation); **GRAINS** is inspired by 1980s/1990s digital codecs for decimation, bit reduction, and efficient storage (DPCM with residual *μ*-law companding and slope overload), with parameterisation over a granular engine and storage qualities. Both modes encourage a departure from the present by navigating retention strata to excavate old memories, which find expression through degradation that antiquated mediums impart. 
+Each mode has a specialised sampling engine constructed from tuned misuse of various technologies from its era, resulting in unique aesthetic colouration across memory recall. **TAPE** recreates analogue properties of reel-to-reel and cassette media, with the afforded manipulations—emulating various recording (EQ, noise), playback (saturation, wow/flutter, head tracking errors), splicing (looping) and effects processing (tape echo, pitch modulation); **GRAINS** is inspired by 1980s/1990s digital codecs for decimation, bit reduction, and efficient storage (DPCM with residual *μ*-law companding and slope overload), with parameterisation over a granular engine and storage qualities. Both modes encourage a departure from the present by navigating retention strata to excavate old memories, which find expression through degradation that antiquated mediums impart. 
 
 ---
 ## MANUAL
@@ -20,7 +20,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 * [Install](#install)
 * [Overview](#overview)
 * [Operation](#operation)
-* [Modes](#modes): [TAPE](#mode-1-tape-sw2lc) // [GRAINS](#mode-2-grains-sw2r)
+* [Modes](#modes): [TAPE](#mode-1-tape-sw2r) // [GRAINS](#mode-2-grains-sw2lc)
 * [Retention and Strata](#retention-and-strata)
 * [Settings](#settings)
 * [Examples](#examples)
@@ -51,8 +51,8 @@ SW1 = Switch 1 (top); SW2 = Switch 2 (bottom).
 
 | SWITCH | SETTING | MODE/CTRL | DESCRIPTION |
 |---|---|---|---|
-| **SW2** | L/C | TAPE | Tape engine.|
-| **SW2** | R | GRAINS | Granular engine.|
+| **SW2** | L/C | GRAINS | Granular engine.|
+| **SW2** | R | TAPE | Tape engine.|
 | **SW1** | L/C | Main controls | Main controls for either mode.|
 | **SW1** | R | Alt controls | Alternative controls for either mode.|
 
@@ -84,7 +84,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 
 ## MODES
 
-### MODE 1: TAPE (SW2=L/C)
+### MODE 1: TAPE (SW2=R)
 
 <p align="left">
 <img src="https://github.com/user-attachments/assets/89b91d4d-5a92-48a9-b947-af8f8b8c842b" width="700">
@@ -100,7 +100,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 | **K2** | PITCH | Pitch. | Full CCW=−24 semitones (0v), unison at 0.4 (2v), full CW=+12 semitones (3v). Refer to [K2 Zones](#k2-zones) below) for regions above 3v.|
 | **K3** | RETENTION | Decimation, metrical duration and cassette type. See [Retention and Strata](#retention-and-strata). | Discrete or continuous, per **SETTINGS K1**.|
 | **K4** | ECHO | Tape echo (print-through) over the K5 loop duration. | CCW=off, CW=full effect.|
-| **K5** | LENGTH | Tape loop duration. | CCW=short, CW=long.|
+| **K5** | LENGTH | Tape loop duration and drum head splice length. | CCW=short, CW=long.|
 | **K6** | SPEED | Speed and direction of playback. | 
 | **K7** | K-FIELD DEPTH | Modulation depth. | CCW=off, CW=full effect.|
 
@@ -109,10 +109,9 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
 | **K1** | MIX | Dry/wet. | CCW=dry input, CW=full effect.|
-| **K2** | DRIVE | Record drive into the tape. | CCW=clean, CW=hot.|
+| **K2** | DRIVE | Playback saturation (hysteresis); not recorded to the tape. | CCW=clean, CW=hot.|
 | **K4** | WEAR | Wow/flutter and magnetic distortion; disintegration enabled with **SETTINGS K3** = 0. | CCW=no wear; CW=broken medium.|
 | **K5** | SPLICE ANGLE | Tape splice angle. | CCW=20ms; CW=500ms.|
-| **K6** | HEAD SPLICING | drum head splices to tape loop length. | 1, 2, 4, 8, 16, 32. Centre=8.|
 | **K7** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
 
 
@@ -124,12 +123,12 @@ Numbered **1** to **4**, left to right.
 |---|---|
 | **LED1** | Retention. 8 colours representing strata (as below); continuous blends between colours.|
 | **LED2** | Pitch. 🟢 Unison=Green; ⚪ Octaves=White; 🟠 +5th=Orange; 🔵 −5th=Dark blue; Otherwise dims toward unison.|
-| **LED3** | Speed and direction; slice count on SW1=R.|
+| **LED3** | Speed and direction.|
 | **LED4** | Capture. 🔵 Blue when engaged.|
 
 ---
 
-### MODE 2: GRAINS (SW2=R)
+### MODE 2: GRAINS (SW2=L/C)
 
 <p align="left">
 <img src="https://github.com/user-attachments/assets/4c8648b5-247e-4b5d-97b9-dd3d2ba2a4b4" width="700">
@@ -286,11 +285,11 @@ Adjusting any knob overtakes the firmware indicator, and LEDs indicate the follo
 | **K1** | GLOBAL RETENTION MODE | Global **K3** Retention control in both modes. | Continuous | 0 = Continuous (smooth transition between strata); 1 = Discrete.|
 | **K2** | GLOBAL STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modulation (**L/RK7**) expands to stereo. | 0.5 (mid-spread) | 0. = mono; 1. = hard L/R.|
 | **K3** | TAPE DISINTEGRATION | Whether earned wear travels over time or holds where the dial sets it. | On | 0 = On; 1 = Off.|
-| **K4** | TAPE SCAN REFERENCE | Speed target of advance. | K1 | 0 = K1; 1 = 1x (unity).|
+| **K4** | TAPE ALIASING TONES | Level of aliasing tones (bias fold and imaging) in the strata. | 0.3 | 0. = off; 1. = full.|
 | **K5** | TAPE RHYTHM | Rhythm derived by tape splicing at highest stratum is inherited by others. | Fixed | 0 = Fixed; 1 = Scaled (rhythm is stretched to duration of lower strata).|
 | **K7** | GRAINS SYNC | Sync grain spawning to incoming clock at the FSU CV input. | Off | 0 = free-running; 1 = spawn at metrical divisions in **K4** sparse region.|
 
-All parameters except **K2** are binary switches: CCW is 0 (default); CW is 1.
+All parameters except **K2** and **K4** are binary switches: CCW is 0 (default); CW is 1.
 
 Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and reflash. On exit, **SW1** position determines save.
 
