@@ -84,51 +84,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 
 ## MODES
 
-### MODE 1: TAPE (SW2=R)
-
-<p align="left">
-<img src="https://github.com/user-attachments/assets/89b91d4d-5a92-48a9-b947-af8f8b8c842b" width="700">
-</p>
-
-*Figure 3:* Eltro Mark II Information Rate Changer (circa 1960) tape machine. See [Eltro description by Wendy Carlos for more information](https://www.wendycarlos.com/other/Eltro-1967/).
-
-#### Main Controls (SW1=L/C)
-
-| KNOB | SETTING | DESCRIPTION | RANGE |
-|---|---|---|---|
-| **K1** | MIX | Dry/wet. | CCW=dry input, CW=full effect.|
-| **K2** | PITCH | Pitch. | Full CCW=−24 semitones (0v), unison at 0.4 (2v), full CW=+12 semitones (3v). Refer to [K2 Zones](#k2-zones) below) for regions above 3v.|
-| **K3** | RETENTION | Decimation, metrical duration and cassette type. See [Retention and Strata](#retention-and-strata). | Discrete or continuous, per **SETTINGS K1**.|
-| **K4** | ECHO | Tape echo (print-through) over the K5 loop duration. | CCW=off, CW=full effect.|
-| **K5** | LENGTH | Tape loop duration and drum head splice length. | CCW=short, CW=long.|
-| **K6** | SPEED | Speed and direction of playback. | 
-| **K7** | K-FIELD DEPTH | Modulation depth. | CCW=off, CW=full effect.|
-
-#### Alt Controls (SW1=R)
-
-| KNOB | SETTING | DESCRIPTION | RANGE |
-|---|---|---|---|
-| **K1** | MIX | Dry/wet. | CCW=dry input, CW=full effect.|
-| **K2** | DRIVE | Playback saturation (hysteresis); not recorded to the tape. | CCW=clean, CW=hot.|
-| **K4** | WEAR | Wow/flutter and magnetic distortion; disintegration enabled with **SETTINGS K3** = 0. | CCW=no wear; CW=broken medium.|
-| **K5** | SPLICE ANGLE | Tape splice angle. | CCW=20ms; CW=500ms.|
-| **K7** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
-
-
-#### TAPE LEDs
-
-Numbered **1** to **4**, left to right.
-
-| LED | DESCRIPTION |
-|---|---|
-| **LED1** | Retention. 8 colours representing strata (as below); continuous blends between colours.|
-| **LED2** | Pitch. 🟢 Unison=Green; ⚪ Octaves=White; 🟠 +5th=Orange; 🔵 −5th=Dark blue; Otherwise dims toward unison.|
-| **LED3** | Speed and direction.|
-| **LED4** | Capture. 🔵 Blue when engaged.|
-
----
-
-### MODE 2: GRAINS (SW2=L/C)
+### MODE 1: GRAINS (SW2=L/C)
 
 <p align="left">
 <img src="https://github.com/user-attachments/assets/4c8648b5-247e-4b5d-97b9-dd3d2ba2a4b4" width="700">
@@ -191,6 +147,50 @@ Numbered **1** to **4**, left to right.
 * ⚪ **±0.5x and ±2x**: White.
 * 🔵 🟠 **Otherwise**: Blue forwards, orange reverse.
 * **K4** coverage landmarks (see above).
+
+---
+
+### MODE 2: TAPE (SW2=R)
+
+<p align="left">
+<img src="https://github.com/user-attachments/assets/89b91d4d-5a92-48a9-b947-af8f8b8c842b" width="700">
+</p>
+
+*Figure 3:* Eltro Mark II Information Rate Changer (circa 1960) tape machine. See [Eltro description by Wendy Carlos for more information](https://www.wendycarlos.com/other/Eltro-1967/).
+
+#### Main Controls (SW1=L/C)
+
+| KNOB | SETTING | DESCRIPTION | RANGE |
+|---|---|---|---|
+| **K1** | MIX | Dry/wet. | CCW=dry input, CW=full effect.|
+| **K2** | PITCH | Pitch. | Full CCW=−24 semitones (0v), unison at 0.4 (2v), full CW=+12 semitones (3v). Refer to [K2 Zones](#k2-zones) below) for regions above 3v.|
+| **K3** | RETENTION | Decimation, metrical duration and cassette type. See [Retention and Strata](#retention-and-strata). | Discrete or continuous, per **SETTINGS K1**.|
+| **K4** | ECHO | Tape echo (print-through) over the K5 loop duration. | CCW=off, CW=full effect.|
+| **K5** | LENGTH | Tape loop duration and drum head splice length. | CCW=short, CW=long.|
+| **K6** | SPEED | Speed and direction of playback. | Continuous; centre=0x, full CCW=−2x, full CW=+2x (detents at ±0.5x, ±1x and ±2x).|
+| **K7** | K-FIELD DEPTH | Modulation depth. | CCW=off, CW=full effect.|
+
+#### Alt Controls (SW1=R)
+
+| KNOB | SETTING | DESCRIPTION | RANGE |
+|---|---|---|---|
+| **K1** | MIX | Dry/wet. | CCW=dry input, CW=full effect.|
+| **K2** | DRIVE | Playback saturation (hysteresis); not recorded to the tape. | CCW=clean, CW=hot.|
+| **K4** | WEAR | Wow/flutter and magnetic distortion; disintegration enabled with **SETTINGS K3** = 0. | CCW=no wear; CW=broken medium.|
+| **K5** | SPLICE ANGLE | Tape splice angle. | CCW=20ms; CW=500ms.|
+| **K7** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
+
+
+#### TAPE LEDs
+
+Numbered **1** to **4**, left to right.
+
+| LED | DESCRIPTION |
+|---|---|
+| **LED1** | Retention. 8 colours representing strata (as below); continuous blends between colours.|
+| **LED2** | Pitch. 🟢 Unison=Green; ⚪ Octaves=White; 🟠 +5th=Orange; 🔵 −5th=Dark blue; Otherwise dims toward unison.|
+| **LED3** | Speed and direction.| 
+| **LED4** | Capture. 🔵 Blue when engaged.|
 
 ---
 
@@ -264,12 +264,13 @@ Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW1
 
 On entry to **SETTINGS**, LEDs indicates the firmware version.
 
-v1.1 (current) displays: **LED1 and LED2** = 🔴 red with **LED3–4** off.
+| VERSION | LED DISPLAY | MANUAL |
+|---|---|---|
+| v1.1 (current) | 🔴🔴⚫⚫ | [v1.1 Manual][manual-v1.1] |
+| v1.0 | 🔴⚫⚫⚫ | [v1.0 Manual][manual-v1.0] |
 
-The [v1.0 manual](https://github.com/jhockman/the-archivist/tree/v1.0) remains available.
-
-Subsequent versions will be listed here with a change log when available.
-
+[manual-v1.1]: https://github.com/jhockman/the-archivist/
+[manual-v1.0]: https://github.com/jhockman/the-archivist/tree/v1.0
 
 Adjusting any knob overtakes the firmware indicator, and LEDs indicate the following:
 
@@ -285,7 +286,7 @@ Adjusting any knob overtakes the firmware indicator, and LEDs indicate the follo
 | **K1** | GLOBAL RETENTION MODE | Global **K3** Retention control in both modes. | Continuous | 0 = Continuous (smooth transition between strata); 1 = Discrete.|
 | **K2** | GLOBAL STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modulation (**L/RK7**) expands to stereo. | 0.5 (mid-spread) | 0. = mono; 1. = hard L/R.|
 | **K3** | TAPE DISINTEGRATION | Whether earned wear travels over time or holds where the dial sets it. | On | 0 = On; 1 = Off.|
-| **K4** | TAPE ALIASING TONES | Level of aliasing tones (bias fold and imaging) in the strata. | 0.3 | 0. = off; 1. = full.|
+| **K4** | ALIASING | Level of aliasing tones (folded imaging) in the strata. | 0.3 | 0. = off; 1. = substantial.|
 | **K5** | TAPE RHYTHM | Rhythm derived by tape splicing at highest stratum is inherited by others. | Fixed | 0 = Fixed; 1 = Scaled (rhythm is stretched to duration of lower strata).|
 | **K7** | GRAINS SYNC | Sync grain spawning to incoming clock at the FSU CV input. | Off | 0 = free-running; 1 = spawn at metrical divisions in **K4** sparse region.|
 
