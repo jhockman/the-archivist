@@ -20,7 +20,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 * [Install](#install)
 * [Overview](#overview)
 * [Operation](#operation)
-* [Modes](#modes): [TAPE](#mode-1-tape-sw2r) // [GRAINS](#mode-2-grains-sw2lc)
+* [Modes](#modes): [GRAINS](#mode-2-grains-sw2lc) // [TAPE](#mode-1-tape-sw2r)
 * [Retention and Strata](#retention-and-strata)
 * [Settings](#settings)
 * [Examples](#examples)
