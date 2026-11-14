@@ -176,7 +176,7 @@ Numbered **1** to **4**, left to right.
 |---|---|---|---|
 | **K1** | MIX | Dry/wet. | CCW=dry input, CW=full effect.|
 | **K2** | DRIVE | Playback saturation (hysteresis); not recorded to the tape. | CCW=clean, CW=hot.|
-| **K4** | WEAR | Wow/flutter and magnetic distortion; disintegration enabled with **SETTINGS K3** = 0. | CCW=no wear; CW=broken medium.|
+| **K4** | WEAR | Wow/flutter and magnetic distortion; disintegration enabled with **SETTINGS K5** = 0. | CCW=no wear; CW=broken medium.|
 | **K5** | SPLICE ANGLE | Tape splice angle. | CCW=20ms; CW=500ms.|
 | **K7** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
 
@@ -283,14 +283,14 @@ Adjusting any knob overtakes the firmware indicator, and LEDs indicate the follo
 
 | KNOB | SETTING | DESCRIPTION | DEFAULT | RANGE |
 |---|---|---|---|---|
-| **K1** | GLOBAL RETENTION MODE | Global **K3** Retention control in both modes. | Continuous | 0 = Continuous (smooth transition between strata); 1 = Discrete.|
-| **K2** | GLOBAL STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modulation (**L/RK7**) expands to stereo. | 0.5 (mid-spread) | 0. = mono; 1. = hard L/R.|
-| **K3** | TAPE DISINTEGRATION | Whether earned wear travels over time or holds where the dial sets it. | On | 0 = On; 1 = Off.|
-| **K4** | ALIASING | Level of aliasing tones (folded imaging) in the strata. | 0.3 | 0. = off; 1. = substantial.|
-| **K5** | TAPE RHYTHM | Rhythm derived by tape splicing at highest stratum is inherited by others. | Fixed | 0 = Fixed; 1 = Scaled (rhythm is stretched to duration of lower strata).|
-| **K7** | GRAINS SYNC | Sync grain spawning to incoming clock at the FSU CV input. | Off | 0 = free-running; 1 = spawn at metrical divisions in **K4** sparse region.|
+| **K1** | GLOBAL: RETENTION MODE | Global **K3** Retention control in both modes. | Continuous | 0 = Continuous (smooth transition between strata); 1 = Discrete.|
+| **K2** | GLOBAL: STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modulation (**L/RK7**) expands to stereo. | 0.5 (mid-spread) | 0. = mono; 1. = hard L/R.|
+| **K3** | GLOBAL: ALIASING | Level of aliasing tones (folded imaging) in the strata. | 0.3 | 0. = min; 1. = substantial.|
+| **K4** | GRAINS: SYNC | Sync grain spawning to incoming clock at the FSU CV input. | Off | 0 = free-running; 1 = spawn at metrical divisions in **K4** sparse region.|
+| **K5** | TAPE: DISINTEGRATION | Whether earned wear travels over time or holds where the dial sets it. | On | 0 = On; 1 = Off.|
+| **K6** | TAPE: RHYTHM | Rhythm derived by tape splicing at highest stratum is inherited by others. | Fixed | 0 = Fixed; 1 = Scaled (rhythm is stretched to duration of lower strata).|
 
-All parameters except **K2** and **K4** are binary switches: CCW is 0 (default); CW is 1.
+All parameters except **K2** and **K3** are binary switches: CCW is 0 (default); CW is 1.
 
 Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and reflash. On exit, **SW1** position determines save.
 
@@ -323,7 +323,7 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 #### DISINTEGRATION
 
-* With default setting for disintegration (**K3**=0) and **SW1=R K4** > 0, captured audio is continually degraded through emulated medium destruction (e.g., wow/flutter, magnetic distortion). Higher **SW1=R K4** settings result in worse starting degradation and faster disintegration rates (from 5–15 minutes). 
+* With default setting for disintegration (**K5**=0) and **SW1=R K4** > 0, captured audio is continually degraded through emulated medium destruction (e.g., wow/flutter, magnetic distortion). Higher **SW1=R K4** settings result in worse starting degradation and faster disintegration rates (from 5–15 minutes). 
 
 ---
 
