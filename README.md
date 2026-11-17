@@ -175,7 +175,7 @@ Numbered **1** to **4**, left to right.
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
 | **K1** | MIX | Dry/wet. | CCW=dry input, CW=full effect.|
-| **K2** | DRIVE | Playback saturation (hysteresis); not recorded to the tape. | CCW=clean, CW=hot.|
+| **K2** | DRIVE | Input level into tape saturation, −12dB to +12dB, centre=unity. | CCW=lower (clean), CW=louder (saturated).|
 | **K4** | WEAR | Wow/flutter and magnetic distortion; disintegration enabled with **SETTINGS K5** = 0. | CCW=no wear; CW=broken medium.|
 | **K5** | SPLICE ANGLE | Tape splice angle. | CCW=20ms; CW=500ms.|
 | **K7** | K-FIELD RATE | Modulation rate. | CCW=slow, CW=fast.|
