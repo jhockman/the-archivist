@@ -47,7 +47,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 *Figure 2:* Panel layout with abbreviations used below (e.g., **K1–7**: knobs, **SW1–2**: switches).
 
 ### SWITCHES
-SW1 = Switch 1 (top; A/B/C, left to right); SW2 = Switch 2 (bottom; X/Y/Z, left to right).
+SW1 = Top (A/B/C); SW2 = Bottom (X/Y/Z).
 
 | SWITCH | SETTING | MODE/CTRL | DESCRIPTION |
 |---|---|---|---|
