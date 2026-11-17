@@ -118,11 +118,10 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 
 #### **K4**: DENSITY 
 * Sets the number and distribution of overlapping grains.
-* Maximum density is generated at the centre position. At **K2**=unison, **K6**=1x, and **K7**=0, maximum density is 5, and is increased automatically for cloud coverage, presence of pitch intervals, and **K7**>0.
-* Turning either way decreases the number of grains continuously. LED3 blinks slowly at centre (maximum density).
+* Maximum density is generated at the centre position. At **K2**=unison, **K6**=1x, and **K7**=0, maximum density is 4, and is increased automatically for cloud coverage, presence of pitch intervals, and **K7**>0.
+* Turning either way decreases the number of grains continuously. LED3 blinks at centre (maximum density).
 * Anticlockwise settings generate grains at even amplitude and synchronous spacing.
 * Clockwise settings generate grains at random amplitudes and asynchronous spacing.
-* LED3 blinks at double rate where grains no longer overlap sufficiently to sum smoothly. This point varies with pitch and speed settings.
 * At either extreme setting, one grain is generated per four grain lengths.
 * With trigger or clock signal in **FSU CV INPUT**, **K4** at min or max triggers grains (min = isochronous, max = random).
 
@@ -147,7 +146,7 @@ Numbered **1** to **4**, left to right.
 * 🟢 **±1x**: Green.
 * ⚪ **±0.5x and ±2x**: White.
 * 🔵 🟠 **Otherwise**: Blue forwards, orange reverse.
-* **K4** coverage landmarks (see above).
+* **K4** at centre: flashing (see Density above).
 
 ---
 
