@@ -20,7 +20,7 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 * [Install](#install)
 * [Overview](#overview)
 * [Operation](#operation)
-* [Modes](#modes): [TAPE](#mode-1-tape-sw2lc) // [GRAINS](#mode-2-grains-sw2r)
+* [Modes](#modes): [TAPE](#mode-1-tape-sw2xy) // [GRAINS](#mode-2-grains-sw2z)
 * [Retention and Strata](#retention-and-strata)
 * [Settings](#settings)
 * [Examples](#examples)
@@ -47,16 +47,16 @@ Each mode has a specialised sampling engine constructed from tuned misuse of var
 *Figure 2:* Panel layout with abbreviations used below (e.g., **K1–7**: knobs, **SW1–2**: switches).
 
 ### SWITCHES
-SW1 = Switch 1 (top); SW2 = Switch 2 (bottom).
+SW1 = Switch 1 (top; A/B/C, left to right); SW2 = Switch 2 (bottom; X/Y/Z, left to right).
 
 | SWITCH | SETTING | MODE/CTRL | DESCRIPTION |
 |---|---|---|---|
-| **SW2** | L/C | TAPE | Tape engine.|
-| **SW2** | R | GRAINS | Granular engine.|
-| **SW1** | L/C | Main controls | Main controls for either mode.|
-| **SW1** | R | Alt controls | Alternative controls for either mode.|
+| **SW2** | X/Y | TAPE | Tape engine.|
+| **SW2** | Z | GRAINS | Granular engine.|
+| **SW1** | A/B | Main controls | Main controls for either mode.|
+| **SW1** | C | Alt controls | Alternative controls for either mode.|
 
-Parameter values are stored upon toggling **SW1** control pages and recalled on passthrough. *NB: starting the module with* **SW1=R** *will snapshot knob positions which are held on change to* **SW1=L**.
+Parameter values are stored upon toggling **SW1** control pages and recalled on passthrough. *NB: starting the module with* **SW1=C** *will snapshot knob positions which are held on change to* **SW1=A**.
 
 ### INPUTS AND OUTPUTS
 | IN/OUT | DESCRIPTION |
@@ -72,8 +72,8 @@ While captured, monitor follows L-input so disengaging capture and re-enabling c
 | GESTURE | DESCRIPTION |
 |---|---|
 | **Tap** | Capture. |
-| **Hold 3sec in SW1=C** | Enter/exit **SETTINGS** page.|
-| **Hold 3sec in SW1=L or R** | Clears retention in **TAPE** or **GRAINS**.|
+| **Hold 3sec in SW1=B** | Enter/exit **SETTINGS** page.|
+| **Hold 3sec in SW1=A or C** | Clears retention in **TAPE** or **GRAINS**.|
 
 **FSU Button** operation is equivalent in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
 
@@ -84,7 +84,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 
 ## MODES
 
-### MODE 1: TAPE (SW2=L/C)
+### MODE 1: TAPE (SW2=X/Y)
 
 <p align="left">
 <img src="https://github.com/user-attachments/assets/89b91d4d-5a92-48a9-b947-af8f8b8c842b" width="700">
@@ -92,7 +92,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 
 *Figure 3:* Eltro Mark II Information Rate Changer (circa 1960) tape machine. See [Eltro description by Wendy Carlos for more information](https://www.wendycarlos.com/other/Eltro-1967/).
 
-#### Main Controls (SW1=L/C)
+#### Main Controls (SW1=A/B)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
@@ -104,7 +104,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 | **K6** | SPEED | Speed and direction of playback. | 
 | **K7** | K-FIELD DEPTH | Modulation depth. | CCW=off, CW=full effect.|
 
-#### Alt Controls (SW1=R)
+#### Alt Controls (SW1=C)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
@@ -122,12 +122,12 @@ Numbered **1** to **4**, left to right.
 |---|---|
 | **LED1** | Retention. 8 colours representing strata (as below); continuous blends between colours.|
 | **LED2** | Pitch. 🟢 Unison=Green; ⚪ Octaves=White; 🟠 +5th=Orange; 🔵 −5th=Dark blue; Otherwise dims toward unison.|
-| **LED3** | Speed and direction; slice count on SW1=R.|
+| **LED3** | Speed and direction; slice count on SW1=C.|
 | **LED4** | Capture. 🔵 Blue when engaged.|
 
 ---
 
-### MODE 2: GRAINS (SW2=R)
+### MODE 2: GRAINS (SW2=Z)
 
 <p align="left">
 <img src="https://github.com/user-attachments/assets/4c8648b5-247e-4b5d-97b9-dd3d2ba2a4b4" width="700">
@@ -135,7 +135,7 @@ Numbered **1** to **4**, left to right.
 
 *Figure 4:* The E-mu Emulator II (1985).
 
-#### Main Controls (SW1=L/C)
+#### Main Controls (SW1=A/B)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
@@ -147,7 +147,7 @@ Numbered **1** to **4**, left to right.
 | **K6** | SPEED | Speed and direction of playback. | Continuous; centre=0x, full CCW=−2x, full CW=+2x (detents at ±0.5x, ±1x and ±2x).|
 | **K7** | SPRAY | Gaussian scatter of grain read positions. | CCW=none (grains follow read head), CW=random position.|
 
-#### Alt Controls (SW1=R)
+#### Alt Controls (SW1=C)
 
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
@@ -212,8 +212,8 @@ With **SETTINGS K6**=Position, LED3 instead displays a brightness ramp: off at f
 
 * 3 octave layers sound together, gliding endlessly without leaving the register.
 * **K6** sets glide speed and direction; at 0x it holds.
-* **LK1** between 3–4v sets focus: CCW = low, CW = adds additional brighter layers.
-* **RK1** pitch intervals are bypassed.
+* **Main K1** between 3–4v sets focus: CCW = low, CW = adds additional brighter layers.
+* **Alt K1** pitch intervals are bypassed.
 * **LED2** ramps 🔵 blue to 🔴 red across each octave.
 
 ---
@@ -254,7 +254,7 @@ Coarser strata reach further back in time, so at a given speed the same phrase g
 
 ## SETTINGS
 
-Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW1=C**, or **FSU** held at boot.
+Parameters affecting module behaviour. Enter with **FSU-hold (3 sec)** and **SW1=B**, or **FSU** held at boot.
 
 *NB*: Avoid CV input modulation while entering, using or exiting.
 
@@ -276,11 +276,11 @@ Adjusting any knob overtakes the firmware indicator, and LEDs indicate the follo
 | KNOB | SETTING | DESCRIPTION | DEFAULT | RANGE |
 |---|---|---|---|---|
 | **K1** | GLOBAL RETENTION MODE | Global **K3** Retention control in both modes. | Continuous | 0 = Continuous (smooth transition between strata); 1 = Discrete.|
-| **K2** | GLOBAL STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modulation (**L/RK7**) expands to stereo. | 0.5 (mid-spread) | 0. = mono; 1. = hard L/R.|
+| **K2** | GLOBAL STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modulation (**Main/Alt K7**) expands to stereo. | 0.5 (mid-spread) | 0. = mono; 1. = hard L/R.|
 | **K3** | TAPE DISINTEGRATION | Whether earned wear travels over time or holds where the dial sets it. | On | 0 = On; 1 = Off.|
 | **K4** | TAPE SCAN REFERENCE | Speed target of advance. | K1 | 0 = K1; 1 = 1x (unity).|
 | **K5** | TAPE RHYTHM | Rhythm derived by tape splicing at highest stratum is inherited by others. | Fixed | 0 = Fixed; 1 = Scaled (rhythm is stretched to duration of lower strata).|
-| **K6** | GRAINS POSITION | Grains **RK6** as position control. | Off | 0 = **RK6** mirrors **LK6** speed control; 1 =  **RK6** as position control (**LK6** remains speed).|
+| **K6** | GRAINS POSITION | Grains **Alt K6** as position control. | Off | 0 = **Alt K6** mirrors **Main K6** speed control; 1 =  **Alt K6** as position control (**Main K6** remains speed).|
 | **K7** | GRAINS SYNC | Sync grain spawning to incoming clock at the FSU CV input. | Off | 0 = free-running; 1 = spawn at metrical divisions in **K4** sparse region.|
 
 All parameters except **K2** are binary switches: CCW is 0 (default); CW is 1.
@@ -289,9 +289,9 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 | SW1 POSITION | SETTING | DESCRIPTION|
 |---|---|---|
-| **SW1=L** | NEW USER | Save edits; new user settings are saved and used on restart.|
-| **SW1=C** | OLD USER | Cancel; discard changes and reuse saved user settings on restart.|
-| **SW1=R** | DEFAULT | Reset to defaults; discard changes and use module defaults on restart.|
+| **SW1=A** | NEW USER | Save edits; new user settings are saved and used on restart.|
+| **SW1=B** | OLD USER | Cancel; discard changes and reuse saved user settings on restart.|
+| **SW1=C** | DEFAULT | Reset to defaults; discard changes and use module defaults on restart.|
 
 ---
 
@@ -301,7 +301,7 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 #### RECONSTRUCTION
 
-* Set **SW1=L/K1** = unison (**LED2**=green, 0.4), **SW1=R/K1** = centre, **K6** = 1x (0.8), **K7** = full CCW, **SW1=R/K2** = 0. (no reverse). **LED2** is green at unison.
+* Set **Main K1** = unison (**LED2**=green, 0.4), **Alt K1** = centre, **K6** = 1x (0.8), **K7** = full CCW, **Alt K2** = 0. (no reverse). **LED2** is green at unison.
 
 #### PITCH SHIFTING
 
@@ -310,14 +310,14 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 #### TIME SCALING
 
 * Similarly, follow above instructions for reconstruction, and modify **K6** to desired speed. Adjustments to other parameters (notably **K5** and **K7**) will result in improved coverage at **K6** nearer to 0x.
-* With **SETTINGS** **K6** = 1 and **LK6** (speed) at 0x (0.5), **RK6** may be used to control position in the buffer without advancing speed.
+* With **SETTINGS** **K6** = 1 and **Main K6** (speed) at 0x (0.5), **Alt K6** may be used to control position in the buffer without advancing speed.
 * *NB: Due to the laws of reality, while uncaptured, if you play back audio at **K6**<1x the output reflects material at an increasingly greater delay from the input. Playing back >1x reuses audio in the buffer. Don't be angry about this, we can't control time yet.*
 
 ### TAPE
 
 #### DISINTEGRATION
 
-* With default setting for disintegration (**K3**=0) and **SW1=R K4** > 0, captured audio is continually degraded through emulated medium destruction (e.g., wow/flutter, magnetic distortion). Higher **SW1=R K4** settings result in worse starting degradation and faster disintegration rates (from 5–15 minutes). 
+* With default setting for disintegration (**K3**=0) and **Alt K4** > 0, captured audio is continually degraded through emulated medium destruction (e.g., wow/flutter, magnetic distortion). Higher **Alt K4** settings result in worse starting degradation and faster disintegration rates (from 5–15 minutes). 
 
 ---
 
