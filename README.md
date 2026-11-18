@@ -87,6 +87,8 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 
 ### MODE 1: GRAINS (SW2=X/Y)
 
+**GRAINS** is a microsound processor with wide ranging control offering a modeless continuum between reconstruction, pitch/time-scaling, cloud generation, and experimental techniques (Shepard tones, stochastic sequencing). Retention strata are modelled on the E-mu EII (1984) codec.
+
 <p align="left">
 <img src="https://github.com/user-attachments/assets/4c8648b5-247e-4b5d-97b9-dd3d2ba2a4b4" width="700">
 </p>
@@ -152,11 +154,13 @@ Numbered **1** to **4**, left to right.
 
 ### MODE 2: TAPE (SW2=Z)
 
+**TAPE** translates many of the concepts of **GRAINS** into an analogue domain. At the centre of **TAPE** is a model of the Eltro Rate Changer (c. 1960s), one of the first systems capable of independent pitch and rhythm modification. In place of a digital codec, **TAPE** emulates the qualities of various medium conditions in its retention strata, and looped captures exhibit disintegration over time.    
+
 <p align="left">
 <img src="https://github.com/user-attachments/assets/89b91d4d-5a92-48a9-b947-af8f8b8c842b" width="700">
 </p>
 
-*Figure 3:* Eltro Mark II Information Rate Changer (circa 1960) tape machine. See [Eltro description by Wendy Carlos for more information](https://www.wendycarlos.com/other/Eltro-1967/).
+*Figure 3:* Eltro Mark II Rate Changer (circa 1960) tape machine. See [Eltro description by Wendy Carlos for more information](https://www.wendycarlos.com/other/Eltro-1967/).
 
 #### Main Controls (SW1=A/B)
 
