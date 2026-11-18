@@ -51,8 +51,8 @@ SW1 = Top (A/B/C); SW2 = Bottom (X/Y/Z).
 
 | SWITCH | SETTING | MODE/CTRL | DESCRIPTION |
 |---|---|---|---|
-| **SW2** | X/Y | GRAINS | Granular engine.|
-| **SW2** | Z | TAPE | Tape engine.|
+| **SW2** | X/Y | **GRAINS** | Granular engine.|
+| **SW2** | Z | **TAPE** | Tape engine.|
 | **SW1** | A/B | Main controls | Main controls for either mode.|
 | **SW1** | C | Alt controls | Alternative controls for either mode.|
 
