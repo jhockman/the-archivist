@@ -69,12 +69,12 @@ While captured, monitor follows L-input so disengaging capture and re-enabling c
 
 ### FSU BUTTON
 
-| GESTURE | DESCRIPTION |
-|---|---|
-| **Tap** | Capture. |
-| **Hold 3sec in SW1=B** | Enter/exit **SETTINGS** page.|
-| **Hold 3–5sec in SW1=A or C, release** | Undo: return to the previous capture (when uncaptured, to the last capture).|
-| **Hold 5sec in SW1=A or C, release** | Clears retention in **TAPE** or **GRAINS**.|
+| GESTURE | IN MODE | DESCRIPTION |
+|---|---|---|
+| **Tap** | **SW1=A/C** | Capture. |
+| **Hold 3sec** | **SW1=B** | Enter/exit **SETTINGS** page.|
+| **Hold 3–5sec and release** | **SW1=A/C** | Undo: return to the previous capture (when uncaptured, to the last capture).|
+| **Hold 5sec and release** | **SW1=A/C**| Clears retention in **TAPE** or **GRAINS**.|
 
 **FSU Button** operation is equivalent in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
 
