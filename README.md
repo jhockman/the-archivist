@@ -114,9 +114,9 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 | **K1** | MIX | Dry/wet. | CCW=dry input, CW=full effect.|
 | **K2** | DETUNE | Per-grain pitch deviation. | Centre=off. CCW=continuous spread up to ±12 semitones; CW=discrete interval sets.|
 | **K4** | SWING / HUMANISE | Grain timing. | CCW of centre=swing; CW of centre=random lateness.|
-| **K5** | WINDOW | Grain envelope shape. | Centre=a plateau of pure Hann. CCW morphs to an exponential decay; CW morphs to its reverse, a swell.|
+| **K5** | WINDOW | Grain envelope shape. | Centre=Hann; CCW morphs to exp; CW morphs to reverse exp.|
 | **K6** | REVERSE | Proportion of grains played backwards. | CCW=all forward, CW=all reverse.|
-| **K7** | SPACE | Schroeder allpass diffusion with tank reverb. | CCW to centre=dry to full diffusion; centre to CW=diffusion held full, tank decay 1-9 s.|
+| **K7** | SPACE | Schroeder allpass diffusion with tank reverb. | CCW to centre=dry to full diffusion; centre to CW=diffusion full with tank decay 1–9 s.|
 
 #### **K4**: DENSITY 
 * Sets the number and distribution of overlapping grains.
@@ -169,8 +169,8 @@ Numbered **1** to **4**, left to right.
 | **K1** | MIX | Dry/wet. | CCW=dry input, CW=full effect.|
 | **K2** | PITCH | Pitch. | Full CCW=−24 semitones (0v), unison at 0.4 (2v), full CW=+12 semitones (3v). Refer to [K2 Zones](#k2-zones) below) for regions above 3v.|
 | **K3** | RETENTION | Decimation, metrical duration and cassette type. See [Retention and Strata](#retention-and-strata). | Discrete or continuous, per **SETTINGS K1**.|
-| **K4** | ECHO | Tape echo (print-through) over the K5 loop duration. | CCW=off, CW=full effect.|
-| **K5** | LENGTH | Tape loop duration and drum head splice length. | CCW=short, CW=long.|
+| **K4** | ECHO | Tape echo linked to K5 drum size. | CCW=off, CW=full effect.|
+| **K5** | DRUM SIZE | Eltro drum size (relative to BPM if synced). | CCW=1/64 note, CW=1 bar.|
 | **K6** | SPEED | Speed and direction of playback. | Continuous; centre=0x, full CCW=−2x, full CW=+2x (detents at ±0.5x, ±1x and ±2x).|
 | **K7** | K-FIELD DEPTH | Modulation depth. | CCW=off, CW=full effect.|
 
