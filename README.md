@@ -69,7 +69,7 @@ While captured, monitor follows L-input so disengaging capture and re-enabling c
 
 ### FSU BUTTON
 
-| GESTURE | IN MODE | DESCRIPTION |
+| GESTURE | MODE | DESCRIPTION |
 |---|---|---|
 | **Tap** | **SW1=A/C** | Capture. |
 | **Hold 3sec** | **SW1=B** | Enter/exit **SETTINGS** page.|
