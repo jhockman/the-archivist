@@ -291,7 +291,7 @@ Adjusting any knob overtakes the firmware indicator, and LEDs indicate the follo
 | **K2** | GLOBAL: STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modulation (**Main/Alt K7**) expands to stereo. | 0.5 (mid-spread) | 0. = mono; 1. = hard L/R.|
 | **K3** | GLOBAL: ALIASING | Level of aliasing tones (folded imaging) in the strata. | 0.3 | 0. = min; 1. = substantial.|
 | **K4** | GRAINS: SYNC | Sync grain spawning to incoming clock at the FSU CV input. | Off | 0 = free-running; 1 = spawn at metrical divisions in **K4** sparse region.|
-| **K5** | TAPE: DISINTEGRATION | Whether earned wear travels over time or holds where the dial sets it. | On | 0 = On; 1 = Off.|
+| **K5** | TAPE: DISINTEGRATION | Medium wear over time. | On | 0 = On; 1 = Off.|
 | **K6** | TAPE: RHYTHM | Rhythm derived by tape splicing at highest stratum is inherited by others. | Fixed | 0 = Fixed; 1 = Scaled (rhythm is stretched to duration of lower strata).|
 
 All parameters except **K2** and **K3** are binary switches: CCW is 0 (default); CW is 1.
