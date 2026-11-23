@@ -100,7 +100,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
 | **K1** | MIX | Dry/wet. | CCW=dry input, CW=full effect.|
-| **K2** | PITCH | Grain pitch (see below). | Full CCW=−24 semitones (0v), unison at 0.4 (2v), full CW=+12 semitones (3v). Refer to [K2 Zones](#k2-zones) below) for regions above 3v.|
+| **K2** | PITCH | Grain pitch (see below). | Full CCW=−24 semitones (0v), unison (0.4, 2v), +12 semitones (0.6, 3v). Refer to [K2 Zones](#k2-zones) below) for regions above 3v.|
 | **K3** | RETENTION | Capture decimation and metrical duration (see [Retention and Strata](#retention-and-strata) below). | Discrete or continuous, per **SETTINGS K1**.|
 | **K4** | DENSITY | Grain overlap (see below). | Centre=maximum overlap; full CCW=minimum isochronous; full CW=minimum random.|
 | **K5** | LENGTH | Grain length. | full CCW=50ms,full CW=500ms |
@@ -167,7 +167,7 @@ Numbered **1** to **4**, left to right.
 | KNOB | SETTING | DESCRIPTION | RANGE |
 |---|---|---|---|
 | **K1** | MIX | Dry/wet. | CCW=dry input, CW=full effect.|
-| **K2** | PITCH | Pitch. | Full CCW=−24 semitones (0v), unison at 0.4 (2v), full CW=+12 semitones (3v). Refer to [K2 Zones](#k2-zones) below) for regions above 3v.|
+| **K2** | PITCH | Pitch. | Full CCW=−24 semitones (0v), unison (0.4, 2v), +12 semitones (0.6, 3v). Refer to [K2 Zones](#k2-zones) below) for regions above 3v.|
 | **K3** | RETENTION | Decimation, metrical duration and cassette type. See [Retention and Strata](#retention-and-strata). | Discrete or continuous, per **SETTINGS K1**.|
 | **K4** | ECHO | Tape echo linked to K5 drum size. | CCW=off, CW=full effect.|
 | **K5** | DRUM SIZE | Eltro drum size (relative to BPM if synced). | CCW=1/64 note, CW=1 bar.|
