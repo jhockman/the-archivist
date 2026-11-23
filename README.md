@@ -290,9 +290,10 @@ Adjusting any knob overtakes the firmware indicator, and LEDs indicate the follo
 | **K1** | GLOBAL: RETENTION MODE | Global **K3** Retention control in both modes. | Continuous | 0 = Continuous (smooth transition between strata); 1 = Discrete.|
 | **K2** | GLOBAL: STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modulation (**Main/Alt K7**) expands to stereo. | 0.5 (mid-spread) | 0. = mono; 1. = hard L/R.|
 | **K3** | GLOBAL: ALIASING | Level of aliasing tones (folded imaging) in the strata. | 0.3 | 0. = min; 1. = substantial.|
-| **K4** | GRAINS: SYNC | Trigger grains at FSU CV input (e.g., clock, trigger). | Off | 0 = free-running; 1 = trigger at metrical divisions in **K4** sparse region.|
-| **K5** | TAPE: DISINTEGRATION | Medium wear over time. | On | 0 = On; 1 = Off.|
-| **K6** | TAPE: RHYTHM | Rhythm derived from drum size at highest stratum is inherited by others. | Fixed | 0 = Fixed; 1 = Scaled (rhythm is stretched to duration of lower strata).|
+| **K4** | GLOBAL: PITCH | Pitch control. | Semitones | 0. = semitones; 0.5 = octaves/fifths; 1. = continuous.|
+| **K5** | GRAINS: SYNC | Trigger grains at FSU CV input (e.g., clock, trigger). | Off | 0 = free-running; 1 = trigger at metrical divisions in **K4** sparse region.|
+| **K6** | TAPE: DISINTEGRATION | Medium wear over time. | On | 0 = On; 1 = Off.|
+| **K7** | TAPE: RHYTHM | Rhythm derived from drum size at highest stratum is inherited by others. | Fixed | 0 = Fixed; 1 = Scaled (rhythm is stretched to duration of lower strata).|
 
 All parameters except **K2** and **K3** are binary switches: CCW is 0 (default); CW is 1.
 
