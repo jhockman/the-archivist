@@ -105,7 +105,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 | **K4** | DENSITY | Grain overlap (see below). | Centre=maximum overlap; full CCW=minimum isochronous; full CW=minimum random.|
 | **K5** | LENGTH | Grain length. | full CCW=50ms,full CW=500ms |
 | **K6** | SPEED | Speed and direction of playback. | Continuous; centre=0x, full CCW=−2x, full CW=+2x (detents at ±0.5x, ±1x and ±2x).|
-| **K7** | SPRAY | Gaussian scatter of grain read positions. | CCW=none (grains follow read head), CW=random position.|
+| **K7** | SPRAY | Bipolar scatter of grains (see below). | Centre=off (**LED4** green); CW=granular reverb ; CCW=scatter.|
 
 #### Alt Controls (SW1=C)
 
@@ -120,7 +120,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 
 #### **K4**: DENSITY 
 * Sets the number and distribution of overlapping grains.
-* Maximum density is generated at the centre position. At **K2**=unison, **K6**=1x, and **K7**=0, maximum density is 4, and is increased automatically for cloud coverage, presence of pitch intervals, and **K7**>0.
+* Maximum density is generated at the centre position. At **K2**=unison, **K6**=1x, and **K7**=centre, maximum density is 4, and is increased automatically for cloud coverage, presence of pitch intervals, and **K7**=away from centre.
 * Turning either way decreases the number of grains continuously. LED3 blinks at centre (maximum density).
 * Anticlockwise settings generate grains at even amplitude and synchronous spacing.
 * Clockwise settings generate grains at random amplitudes and asynchronous spacing.
@@ -131,6 +131,12 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 * Sets deviation of grain read positions from the read head.
 * The point at which additional density becomes available varies with grain length, pitch and speed.
 
+* Bipolar: Centre=off (**LED4**=green).
+* Both CCW and CW scatter grains.
+* **CW (granular reverb):** even grain distribution with inverse weighting to reduce amplitude and spectral content of older grains. Older grains are also distributed wider within stereo field (if **SETTINGS K2**>0). Diffusion and feedback increase with **K7** to produce a longer tail. Pairs well with **Alt K7**.
+* **CCW (general):** Gaussian to uniform scatter.
+
+
 #### GRAINS LEDs
 
 Numbered **1** to **4**, left to right.
@@ -140,7 +146,7 @@ Numbered **1** to **4**, left to right.
 | **LED1** | Retention. 8 colours representing strata (as below); continuous blends between colours.|
 | **LED2** | Pitch. 🟢 Unison=Green; ⚪ Octaves=White; 🟠 +5th=Orange; 🔵 −5th=Dark blue; Otherwise dims toward unison.|
 | **LED3** | Speed and direction, plus density flashing (see above).|
-| **LED4** | Capture. 🔵 Blue when engaged.|
+| **LED4** | Capture. 🔵 Engaged=Blue; 🟢 Scatter (off)=Green (i.e., **K7**=0.5 (Main Controls, no capture).|
 
 **LED3**:
 
@@ -290,12 +296,12 @@ Adjusting any knob overtakes the firmware indicator, and LEDs indicate the follo
 | **K1** | GLOBAL: RETENTION MODE | Global **K3** Retention control in both modes. | Continuous | 0 = Continuous (smooth transition between strata); 1 = Discrete.|
 | **K2** | GLOBAL: STEREO SPREAD | Global: Grains sound across the stereo field; Tape pitch modulation (**Main/Alt K7**) expands to stereo. | 0.5 (mid-spread) | 0. = mono; 1. = hard L/R.|
 | **K3** | GLOBAL: ALIASING | Level of aliasing tones (folded imaging) in the strata. | 0.3 | 0. = min; 1. = substantial.|
-| **K4** | GLOBAL: PITCH | Pitch control. | Semitones | 0. = semitones; 0.5 = octaves/fifths; 1. = continuous.|
+| **K4** | GLOBAL: PITCH | Pitch control. | Octaves/fifths | 0. = octaves/fifths; 0.5 = semitones; 1. = continuous.|
 | **K5** | GRAINS: SYNC | Trigger grains at FSU CV input (e.g., clock, trigger). | Off | 0 = free-running; 1 = trigger at metrical divisions in **K4** sparse region.|
 | **K6** | TAPE: DISINTEGRATION | Medium wear over time. | On | 0 = On; 1 = Off.|
 | **K7** | TAPE: RHYTHM | Rhythm derived from drum size at highest stratum is inherited by others. | Fixed | 0 = Fixed; 1 = Scaled (rhythm is stretched to duration of lower strata).|
 
-All parameters except **K2** and **K3** are binary switches: CCW is 0 (default); CW is 1.
+**K2**, **K3**, and **K4** are discrete options. **K1**, **K5**, **K6**, and **K7** are continuous. 
 
 Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and reflash. On exit, **SW1** position determines save.
 
@@ -313,7 +319,7 @@ Exit **SETTINGS** with **FSU-hold (3 sec)**. Settings persist across reboot and 
 
 #### RECONSTRUCTION
 
-* Set **Main K2** = unison (**LED2**=green, 0.4), **Alt K2** = centre, **K6** = 1x (0.8), **K7** = full CCW, **Alt K6** = 0. (no reverse). **LED2** is green at unison.
+* Set **Main K2** = unison (**LED2**=green, 0.4), **Alt K2** = centre, **K6** = 1x (0.8), **K7** = centre (**LED4**=green), **Alt K6** = 0. (no reverse). **LED2** is green at unison.
 
 #### PITCH SHIFTING
 
