@@ -78,7 +78,7 @@ While captured, monitor follows L-input so disengaging capture and re-enabling c
 
 **FSU Button** operation is equivalent in both modes. Captures are cleared upon mode switch or entering **SETTINGS**.
 
-*NB*: While the device is continually recording, a capture always takes the stratum’s full length back from the moment you hit the FSU button. If a capture is made before the played material can fill the durations of the longer strata, then it will result in silence (or earlier material) in these strata. After power on or memory clear, captures are shortened to what has been recorded since.
+*NB*: While the device is continually recording, a capture takes the stratum’s full length back from the moment you hit the FSU button. If a capture is made before the played material can fill the durations of the longer strata, then it will result in silence (or earlier material) in these strata. After power on or memory clear, captures are shortened to what has been recorded since.
 
 ### KNOBS
 Knob parameterisation differs per mode and pages. Please see knob layout descriptions in the relevant sections. 
@@ -116,12 +116,12 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 | **K4** | SWING / HUMANISE | Grain timing. | CCW of centre=swing; CW of centre=random lateness.|
 | **K5** | WINDOW | Grain envelope shape. | Centre=Hann; CCW morphs to exp; CW morphs to reverse exp.|
 | **K6** | REVERSE | Proportion of grains played backwards. | CCW=all forward, CW=all reverse.|
-| **K7** | SPACE | Schroeder allpass diffusion with tank reverb. | CCW to centre=dry to full diffusion; centre to CW=diffusion full with tank decay 1–9 s.|
+| **K7** | SPACE | Dattorro allpass diffusion with tank reverb. | CCW to centre=dry to full diffusion; centre to CW=diffusion full with tank decay 1–9 s.|
 
 #### **K4**: DENSITY 
 * Sets the number and distribution of overlapping grains.
 * Maximum density is generated at the centre position. At **K2**=unison, **K6**=1x, and **K7**=centre, maximum density is 4, and is increased automatically for cloud coverage, presence of pitch intervals, and **K7**=away from centre.
-* Turning either way decreases the number of grains continuously. LED3 blinks at centre (maximum density).
+* Off centre, CCW or CW decreases the number of grains continuously or at synced metrical values (depending on **SETTINGS K5**). LED3 blinks at centre (maximum density).
 * Anticlockwise settings generate grains at even amplitude and synchronous spacing.
 * Clockwise settings generate grains at random amplitudes and asynchronous spacing.
 * At either extreme setting, one grain is generated per four grain lengths.
@@ -134,7 +134,7 @@ Knob parameterisation differs per mode and pages. Please see knob layout descrip
 * Bipolar: Centre=off (**LED4**=green).
 * Both CCW and CW scatter grains.
 * **CW (granular reverb):** even grain distribution with inverse weighting to reduce amplitude and spectral content of older grains. Older grains are also distributed wider within stereo field (if **SETTINGS K2**>0). Diffusion and feedback increase with **K7** to produce a longer tail. Pairs well with **Alt K7**.
-* **CCW (general):** Gaussian to uniform scatter.
+* **CCW (general spray):** Gaussian to uniform scatter.
 
 
 #### GRAINS LEDs
